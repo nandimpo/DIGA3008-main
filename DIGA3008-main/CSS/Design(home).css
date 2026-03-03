@@ -1,0 +1,134 @@
+.design-header {
+  text-align: center;
+  padding: 4rem 1rem 2rem;
+}
+
+.design-header h1 {
+  font-size: 4rem;
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+  margin-bottom: 1rem;
+  text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+.design-header p {
+  font-size: 1.25rem;
+  color: var(--heading-color);
+  max-width: 50rem;
+  margin: 0 auto;
+  font-family: var(--body-font);
+  line-height: 1.6;
+}
+
+.design-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.875rem;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.design-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.design-box {
+  height: 10rem;
+  background-color: var(--section-background);
+  border-radius: 0.75rem;
+  border: 0.125rem solid var(--border-color);
+  box-shadow: 0 0 1.25rem rgba(0, 255, 128, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-family: var(--body-font);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.design-box:hover {
+  transform: translateY(-0.3125rem);
+  box-shadow: 0 0 1.5625rem rgba(0, 255, 128, 0.4);
+  border-color: var(--accent-color);
+}
+
+.design-box i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
+}
+
+.featured-work {
+  background-color: var(--section-background);
+  padding: 1.5rem 1.25rem;
+  border-radius: 0.75rem;
+  height: 100%;
+  border: 0.125rem solid var(--border-color);
+  font-family: var(--body-font);
+}
+
+.featured-work h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--card-heading-color);
+  margin-bottom: 1.25rem;
+  font-family: var(--heading-font);
+}
+
+.featured-work ul {
+  padding-left: 1.25rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.featured-work li {
+  margin-bottom: 0.75rem;
+}
+
+@media (max-width: 56.25rem) {
+  .design-container {
+    grid-template-columns: 1fr;
+  }
+
+  .design-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-work {
+    margin-top: 1.875rem;
+  }
+
+  .design-header h1 {
+    font-size: 3rem;
+  }
+
+  .design-header p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .design-header h1 {
+    font-size: 2.25rem;
+  }
+
+  .design-box {
+    height: 8.75rem;
+    font-size: 1rem;
+  }
+
+  .design-box i {
+    font-size: 1.5rem;
+  }
+
+  .featured-work h3 {
+    font-size: 1.4rem;
+  }
+}
