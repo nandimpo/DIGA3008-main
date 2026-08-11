@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Blogs.css';
 import useGradientBackground from '../../hooks/useGradientBackground';
+import PortfolioFooterNav from '../../components/PortfolioFooterNav';
 
 export default function Writing() {
   useGradientBackground();
@@ -68,6 +69,7 @@ export default function Writing() {
         <div className="next-blog-container">
           <Link to="/portfolio/writing-2" className="next-blog-btn">Next Writing</Link>
         </div>
+      <PortfolioFooterNav />
     </>
   );
 }

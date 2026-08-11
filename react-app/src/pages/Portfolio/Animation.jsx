@@ -1,5 +1,6 @@
 import '../../styles/Writing.css';
 import useHandwriting from '../../hooks/useHandwriting';
+import PortfolioFooterNav from '../../components/PortfolioFooterNav';
 
 export default function Animation() {
   useHandwriting();
@@ -121,7 +122,7 @@ export default function Animation() {
           </section>
         </main>
 
-        {/* Footer */}
+      <PortfolioFooterNav />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import '../../styles/Writing.css';
 import useHandwriting from '../../hooks/useHandwriting';
 import useNotebookAnimation from '../../hooks/useNotebookAnimation';
+import PortfolioFooterNav from '../../components/PortfolioFooterNav';
 
 export default function PortfolioDesign() {
   useHandwriting();
@@ -111,6 +112,7 @@ export default function PortfolioDesign() {
         </div>
         </section>
         </main>
+      <PortfolioFooterNav />
     </>
   );
 }
