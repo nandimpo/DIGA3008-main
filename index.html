@@ -12,7 +12,8 @@
   <script src="JavaScript/Cursor.js" defer></script>
   <script src="JavaScript/ScrollReveal.js" defer></script>
   <script src="JavaScript/PageTransitions.js" defer></script>
-  <script src="JavaScript/Handwriting.js" defer></script> 
+  <script src="JavaScript/Handwriting.js" defer></script>
+  <script src="JavaScript/ChapterNav.js" defer></script>
 </head>
 <body>
   <div id="cursorPulse"></div>
@@ -35,61 +36,60 @@
     </ul>
   </nav>
 
-  <div class="hero-background-wrapper">
+  <nav class="chapter-nav" aria-label="Page chapters">
+    <a href="#hero" class="chapter-dot active" data-chapter="hero"><span>Intro</span></a>
+    <a href="#story" class="chapter-dot" data-chapter="story"><span>Story</span></a>
+    <a href="#work" class="chapter-dot" data-chapter="work"><span>Work</span></a>
+    <a href="#contact" class="chapter-dot" data-chapter="contact"><span>Contact</span></a>
+  </nav>
+
+  <div id="hero" class="hero-background-wrapper">
     <div class="hero-overlay">
-      <h1 class="hero-heading title-hidden" id="mainTitle">Nandi Mpofu</h1>
+      <h1 class="hero-heading title-hidden" id="mainTitle"><span class="word">Nandi</span> <span class="word">Mpofu</span></h1>
       <p class="hero-subheading title-hidden" id="subTitle">
         Design <span class="divider">|</span>
         Animation <span class="divider">|</span>
         Writing
       </p>
-      <a href="#about" class="about-link">About Me</a>
+      <a href="#story" class="about-link">About Me</a>
     </div>
 
-    <section class="recent-work-section">
-      <h2 class="recent-work-heading">Recent Work</h2>
-      <div class="recent-grid">
-        <div class="recent-item">
-          <a href="Blogs/BlogsHome.html">
-            <img src="Images/Miscallanous/Blogs home 2.jpg" alt="This image is an icon that represents the Blogs home page" />
-            <p class="work-title">Blogs</p>
-            <p class="work-year">2025</p>
-          </a>
-        </div>
-        <div class="recent-item">
-          <a href="Design/DesignHome.html">
-            <img src="Images/Miscallanous/design home 2.jpg" alt="This image is an icon that represents the Design home page" />
-            <p class="work-title">Design</p>
-            <p class="work-year">2025</p>
-          </a>
-        </div>
-        <div class="recent-item">
-          <a href="Portfolio/Portfoliohome.html">
-            <img src="Images/Miscallanous/portfolio home 2.jpg" alt="This image is an icon that represents the Portfolio Homepage" />
-            <p class="work-title">Portfolio</p>
-            <p class="work-year">2025</p>
-          </a>
-        </div>
-        <div class="recent-item">
-          <a href="Scripts/Scriptshome.html">
-            <img src="Images/Miscallanous/scripts home 2.jpg" alt="This image is an icon that represents the Scripts homepage" />
-            <p class="work-title">Scripts</p>
-            <p class="work-year">2025</p>
-          </a>
-        </div>
-      </div>
-    </section>
+    <div class="scroll-cue">
+      <span>Scroll to explore</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+    <svg class="hero-wave" viewBox="0 0 1600 200" preserveAspectRatio="none" aria-hidden="true">
+      <g class="wave wave-back">
+        <path d="M0,120 C200,180 400,60 600,110 C800,160 1000,60 1200,100 C1350,130 1500,90 1600,110 L1600,200 L0,200 Z" />
+        <path d="M0,120 C200,180 400,60 600,110 C800,160 1000,60 1200,100 C1350,130 1500,90 1600,110 L1600,200 L0,200 Z" transform="translate(1600 0)" />
+      </g>
+      <g class="wave wave-mid">
+        <path d="M0,140 C220,90 420,170 640,130 C860,90 1040,170 1260,120 C1400,90 1520,140 1600,130 L1600,200 L0,200 Z" />
+        <path d="M0,140 C220,90 420,170 640,130 C860,90 1040,170 1260,120 C1400,90 1520,140 1600,130 L1600,200 L0,200 Z" transform="translate(1600 0)" />
+      </g>
+      <g class="wave wave-front">
+        <path d="M0,160 C240,130 460,190 680,150 C900,110 1080,180 1300,150 C1420,135 1520,160 1600,150 L1600,200 L0,200 Z" />
+        <path d="M0,160 C240,130 460,190 680,150 C900,110 1080,180 1300,150 C1420,135 1520,160 1600,150 L1600,200 L0,200 Z" transform="translate(1600 0)" />
+      </g>
+    </svg>
   </div>
 
-  <section id="about" class="about-section">
+  <section id="story" class="about-section">
     <div class="about-container">
       <div class="about-text">
         <h2>This is<br><span>My Story</span></h2>
-        <p>
+        <p class="story-beat">
           I fell in love with design through storytelling—across illustration, animation, and interaction.
-          Working between Johannesburg and online creative spaces, I document stories through visuals, thoughtful interfaces, and words.<br><br>
+        </p>
+        <p class="story-beat">
+          Working between Johannesburg and online creative spaces, I document stories through visuals, thoughtful interfaces, and words.
           I'm passionate about creating work that values empathy, accessibility, and community.
-          Whether coding interfaces, designing animations, or writing essays, I aim to bridge art and tech with purpose.
+        </p>
+        <p class="story-beat">
+          Whether coding interfaces, designing animations, or writing essays, I aim to bridge art and tech with purpose—
+          and I'm increasingly drawn toward <strong>immersive experience design</strong>, building the kind of interactive,
+          story-driven work you're scrolling through right now.
         </p>
       </div>
       <div class="about-image">
@@ -98,7 +98,41 @@
     </div>
   </section>
 
-  <footer class="footer">
+  <section id="work" class="recent-work-section">
+    <h2 class="recent-work-heading">Recent Work</h2>
+    <div class="recent-grid">
+      <div class="recent-item">
+        <a href="Blogs/BlogsHome.html">
+          <img src="Images/Miscallanous/Blogs home 2.jpg" alt="This image is an icon that represents the Blogs home page" />
+          <p class="work-title">Blogs</p>
+          <p class="work-year">2025</p>
+        </a>
+      </div>
+      <div class="recent-item">
+        <a href="Design/DesignHome.html">
+          <img src="Images/Miscallanous/design home 2.jpg" alt="This image is an icon that represents the Design home page" />
+          <p class="work-title">Design</p>
+          <p class="work-year">2025</p>
+        </a>
+      </div>
+      <div class="recent-item">
+        <a href="Portfolio/Portfoliohome.html">
+          <img src="Images/Miscallanous/portfolio home 2.jpg" alt="This image is an icon that represents the Portfolio Homepage" />
+          <p class="work-title">Portfolio</p>
+          <p class="work-year">2025</p>
+        </a>
+      </div>
+      <div class="recent-item">
+        <a href="Scripts/Scriptshome.html">
+          <img src="Images/Miscallanous/scripts home 2.jpg" alt="This image is an icon that represents the Scripts homepage" />
+          <p class="work-title">Scripts</p>
+          <p class="work-year">2025</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
     <div class="footer-container">
       <div class="footer-column">
         <h2>Contact</h2>

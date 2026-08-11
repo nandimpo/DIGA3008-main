@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduceMotion) return;
 
-  const selectors = '.image-container, .blog-post, .recent-item, .design-box, .featured-work, .skills-section, .skills-box, .languages-box';
+  const selectors = '.image-container, .blog-post, .recent-item, .design-box, .featured-work, .skills-section, .skills-box, .languages-box, .story-beat';
   const targets = document.querySelectorAll(selectors);
   if (!targets.length) return;
 

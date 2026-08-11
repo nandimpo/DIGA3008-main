@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-const SELECTORS = '.image-container, .blog-post, .recent-item, .design-box, .featured-work, .skills-section, .skills-box, .languages-box';
+const SELECTORS = '.image-container, .blog-post, .recent-item, .design-box, .featured-work, .skills-section, .skills-box, .languages-box, .story-beat';
 
 export default function useScrollReveal(dependency) {
   useEffect(() => {
