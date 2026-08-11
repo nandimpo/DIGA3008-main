@@ -25,11 +25,11 @@ export default function Home() {
             Writing
           </p>
           <a href="#story" className="about-link">About Me</a>
-        </div>
 
-        <div className="scroll-cue">
-          <span>Scroll to explore</span>
-          <i className="fa-solid fa-chevron-down"></i>
+          <div className="scroll-cue">
+            <span>Scroll to explore</span>
+            <i className="fa-solid fa-chevron-down"></i>
+          </div>
         </div>
 
         <svg className="hero-wave" viewBox="0 0 1600 200" preserveAspectRatio="none" aria-hidden="true">
