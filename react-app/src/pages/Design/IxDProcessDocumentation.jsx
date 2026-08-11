@@ -1,0 +1,109 @@
+import { Link } from 'react-router-dom';
+import '../../styles/Design process.css';
+import useCardFadeIn from '../../hooks/useCardFadeIn';
+
+export default function IxDProcessDocumentation() {
+  useCardFadeIn();
+
+  return (
+    <>
+      <header className="design-header">
+          <div className="header-text-group">
+            <h1>Documentation of my IxD Process</h1>
+            <p>This page outlines the thinking and design principles I applied to create my website. It’s not just about how it looks, but about how it works and feels to use. Everything was intentional—even the smallest elements had a reason behind them.</p>
+          </div>
+        </header>
+
+        <main className="design-content">
+          <section className="inspiration-block">
+            <h2>Style Guides</h2>
+            <img src="/Images/Blogs/style guide (correct).png" alt="Style Guide" />
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Goal</h3>
+            <p className="p-summary">
+              My goal is to have a user-friendly, accessible, and clear website that reflects who I am as a designer. I didn’t want something flashy for the sake of it. I wanted something that felt like an extension of how I think—warm, calm, intentional, and easy to understand. I kept asking myself: if someone only spent 30 seconds on my homepage, what would they take away?
+            </p>
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Visual Design Elements</h3>
+            <p className="p-summary">
+              I aim to create strong typographic hierarchy using the ‘Grown’ font for headings to convey a soft, feminine tone, and ‘Montserrat Classic’ for body text for clarity. I also maintain a limited color palette with brown (to embrace identity), orange and yellow (for warmth), and cool accents (for contrast). I experimented with layout spacing, margins, and alignment until the page started to feel like it had rhythm—not just blocks of content, but a conversation.
+            </p>
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Fonts – Readability and Legibility</h3>
+            <p className="p-summary">
+              Choosing fonts was harder than I expected. I didn’t want it to feel generic, but I also didn’t want it to be hard to read. After testing a few options, ‘Grown’ felt expressive enough to give my site character, especially in titles. It almost feels handwritten without being messy. For body copy, I stuck with something clean and versatile—Montserrat Classic. It holds up well across different devices and screen sizes, which is super important for accessibility.
+            </p>
+            <img src="/Images/Blogs/Fonts.png" alt="Fonts used on website" />
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Colour Swatches</h3>
+            <p className="p-summary">
+              This is the full palette I used throughout the site. I wanted to stick with earthy and warm tones, mainly because I don’t see a lot of brown being used in web design, and I wanted to challenge that. I paired it with accent tones like golden yellow and dusty orange to add life and highlight areas for user attention.
+            </p>
+            <img src="/Images/Blogs/Colour palette (chosen 3).png" alt="Full colour palette" />
+
+            <h4>Primary Colour Palette</h4>
+            <img src="/Images/Blogs/Colour palette (chosen 1).png" alt="Primary palette" width="200" />
+            <p className="p-summary">
+              The primary palette is warm and soft. These are the base tones I use the most—brown for depth and grounding, and muted yellows/oranges for energy and brightness. I was really cautious about making sure none of the colours felt too harsh on the eyes.
+            </p>
+
+            <h4>Secondary Colour Palette</h4>
+            <img src="/Images/Blogs/Colour palette (chosen 2).png" alt="Secondary palette" width="200" />
+            <p className="p-summary">
+              The secondary palette helps break things up and guide attention. I mostly use these for contrast and balance—things like CTAs or hover states. It gives the layout some dimension without feeling overwhelming or disjointed.
+            </p>
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Final Design Sketches</h3>
+            <p className="p-summary">
+              These sketches were super helpful for me to think through layout without jumping straight into code. I tried a few different structures and page orders until something felt right. I didn't want every page to look the same—but they still needed to feel connected.
+            </p>
+            <div className="wireframe-gallery">
+              <img src="/Images/DesignProcess/Documentation of my IXD process 1.png" alt="Design sketch 1" />
+              <img src="/Images/DesignProcess/Documentation of my IXD process 2.png" alt="Design sketch 2" />
+              <img src="/Images/DesignProcess/Documentation of my IXD process 3.png" alt="Design sketch 3" />
+              <img src="/Images/DesignProcess/Documentation of my IXD process 4.png" alt="Design sketch 4" />
+              <img src="/Images/DesignProcess/Documentation of my IXD process 5.png" alt="Design sketch 5" />
+              <img src="/Images/DesignProcess/Documentation of my IXD process 6.png" alt="Design sketch 6" />
+              <img src="/Images/DesignProcess/Documentation of my IXD process 7.png" alt="Design sketch 7" />
+            </div>
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Wireframes – Content Mapping</h3>
+            <p className="p-summary">
+              Content mapping helped me make sure every page had a clear purpose and that the flow made sense. I moved a few things around to make better sense of the user’s journey—from homepage to specific areas like scripts or portfolio. Every section has to earn its place and guide the visitor.
+            </p>
+            <img src="/Images/Blogs/Mapping-Sites Content.png" alt="Content mapping" />
+            <img src="/Images/Blogs/Mapping- Experience.png" alt="Experience mapping" />
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Implementation Notes</h3>
+            <p className="p-summary">
+              These are the choices I made while building the final site. Some were visual, others functional, but they all came from testing, reflecting, and reworking areas that didn’t feel quite right.
+            </p>
+            <ul>
+              <li>I created a hierarchy where screen titles appear first, center-aligned for balance.</li>
+              <li>Bright yellow buttons are used to draw attention to interaction points.</li>
+              <li>Cards on the blog page highlight on hover for interactivity.</li>
+              <li>Scrolling allows easy navigation through longer content.</li>
+            </ul>
+          </section>
+
+          <div className="button-container">
+            <Link to="/design/style-process" className="nav-button">← Style Process Documentation</Link>
+          </div>
+        </main>
+    </>
+  );
+}

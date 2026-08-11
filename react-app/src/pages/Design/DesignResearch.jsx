@@ -1,0 +1,124 @@
+import { Link } from 'react-router-dom';
+import '../../styles/Design process.css';
+import useCardFadeIn from '../../hooks/useCardFadeIn';
+
+export default function DesignResearch() {
+  useCardFadeIn();
+
+  return (
+    <>
+      <header className="design-header">
+          <div className="header-text-group">
+            <h1>My Web Design Process</h1>
+            <p>Explore the thinking, planning, and aesthetics behind my interaction design and site development.</p>
+          </div>
+        </header>
+
+        <main className="design-content">
+          <section className="inspiration-block">
+            <h2>Documentation of Your IxD Process</h2>
+            <p className="p-summary">
+              The goal of my website is for users to understand who I am as a designer. It should be clear, understandable, accessible, and warm. I didn’t just want it to feel functional—I wanted it to feel like me. That meant stripping things back, looking at each component individually, and asking if it matched the tone and purpose I had in mind.
+            </p>
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Content Mapping</h3>
+            <img src="/Images/DesignProcess/Content Map 2.png" alt="Experience mapping of a website" />
+          </section>
+
+          <section className="inspiration-block">
+            <h3>User Flow – Screens, Behaviour, and Decisions</h3>
+            <img src="/Images/DesignProcess/Userflow.jpeg" alt="Diagram of user flow" />
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Style Process Documentation</h3>
+            <p className="p-summary">
+              This is my initial design. I like the warm colors but haven’t fully implemented the palettes yet. I want it to feel even warmer. After trying out different shades, I realized some combinations felt off. They clashed more than I expected, which pushed me to dive deeper into colour theory. I’m still experimenting, but the sketches helped me get closer to a look that feels intentional and expressive.
+            </p>
+            <div className="wireframe-gallery">
+              <img src="/Images/DesignProcess/Design Sketch 1.jpg" alt="Design Sketch 1" />
+              <img src="/Images/DesignProcess/Design Sketch 2.jpg" alt="Design Sketch 2" />
+              <img src="/Images/DesignProcess/Design Sketch  3.jpg" alt="Design Sketch 3" />
+              <img src="/Images/DesignProcess/Design Sketch 4.jpg" alt="Design Sketch 4" />
+              <img src="/Images/DesignProcess/Design Sketch 5.jpg" alt="Design Sketch 5" />
+            </div>
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Fonts</h3>
+            <p>
+              I chose ‘Grown’ for headings because it adds personality and makes a statement without being too loud. It matches the slightly playful but grounded feeling I want. For body text, I went with ‘Montserrat Classic’—it’s clean, modern, and easy to read. Together, they balance each other out and give the design both character and clarity.
+            </p>
+            <img src="/Images/DesignProcess/Fonts.png" alt="Possible fonts" />
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Colours – Theory and Relationships</h3>
+            <p className="p-summary">
+              Overall Colour Palette – At first, I was unsure about using brown. It’s not a typical web colour, and I worried it might make the site feel dull. But after researching sites like Art4Web, I realized brown could feel warm, earthy, and rich if used well. That inspired me to lean into it more and refine the combinations to bring out the softness of yellows and oranges alongside deeper browns.
+            </p>
+
+            <h4>Primary Colour Palette</h4>
+            <img src="/Images/DesignProcess/Colour palette 1.png" alt="Primary colour palette" />
+            <p className="p-summary">
+              I chose warm colours (yellow, orange) because they are inviting and harmonious (analogous). I want the palette to feel like sunlight on paper—cozy, not loud. I still plan to refine the yellows so they don’t feel too harsh on white backgrounds.
+            </p>
+
+            <h4>Secondary Colour Palette</h4>
+            <img src="/Images/DesignProcess/Colour palette 2.png" alt="Secondary colour palette" />
+            <p className="p-summary">
+              The secondary palette provides contrast. Orange and blue are complementary and make elements stand out visually. I'm trying to use this to highlight interactive elements like buttons and links while keeping the rest of the site calm and soft. It’s a work in progress, but I’m getting closer to the tone I want.
+            </p>
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Composition – Hierarchy, Balance, Harmony</h3>
+            <p className="p-summary">
+              The layout is center-aligned and symmetrical for harmony. Repeated circular elements reflect my design goals. I want users to feel guided as they scroll, like the design is holding their hand rather than overwhelming them. But I might need to adjust spacing and sizing more because parts still feel a bit floaty.
+            </p>
+          </section>
+
+          <section className="inspiration-block">
+            <h4>Interface Elements – Shape, Colour, Position</h4>
+            <p className="p-summary">
+              I use circular, rounded shapes to maintain a warm and welcoming vibe. I noticed that when everything had sharp edges, the tone shifted into something too corporate. Rounded buttons and containers brought it back into something friendlier—more me.
+            </p>
+            <div className="wireframe-gallery">
+              <img src="/Images/DesignProcess/Button 1.png" alt="Button 1" />
+              <img src="/Images/DesignProcess/Button 2.png" alt="Button 2" />
+              <img src="/Images/DesignProcess/Button 3.png" alt="Button 3" />
+              <img src="/Images/DesignProcess/Button 4.png" alt="Button 4" />
+            </div>
+          </section>
+
+          <section className="inspiration-block">
+            <h3>Reference Material</h3>
+            <p className="p-summary">
+              I appreciate circular designs that promote comfort and calmness. I looked at sites with soft borders, organic shapes, and friendly typography. They made me realize that usability doesn't have to be cold or neutral—it can feel expressive too.
+            </p>
+
+            <ul>
+              <li><a href="https://dribbble.com/shots/12108232--l-gante-home-hero-slider" target="_blank" className="p-name u-url">Inspiration – Dribbble</a></li>
+              <li><a href="https://pixcap.com/blog/warm-color-palette" target="_blank" className="p-name u-url">Inspiration – Pixcap</a></li>
+            </ul>
+
+            <p className="p-summary">
+              Pixcap helped guide my colour choices:
+            </p>
+            <ul>
+              <li>Warm colours (red, orange, yellow) evoke excitement and joy.</li>
+              <li>They highlight key elements like buttons and CTAs.</li>
+              <li>They make users feel welcome and linger longer.</li>
+              <li>They support a friendly, energetic brand identity.</li>
+            </ul>
+          </section>
+
+          <div className="button-container">
+            <Link to="/design/wireframes" className="nav-button">← View Wireframes</Link>
+          </div>
+        </main>
+    </>
+  );
+}

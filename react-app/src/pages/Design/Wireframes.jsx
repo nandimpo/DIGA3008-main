@@ -1,0 +1,80 @@
+import { Link } from 'react-router-dom';
+import '../../styles/Design process.css';
+import useCardFadeIn from '../../hooks/useCardFadeIn';
+
+export default function Wireframes() {
+  useCardFadeIn();
+
+  return (
+    <>
+      <header className="design-header">
+          <div className="header-text-group">
+            <h1>Wireframes</h1>
+            <p>Wireframes are simplified blueprints of a website’s structure and layout, showing functionality without full visuals. They allow me to test the feel and flow of the website before committing to any detailed styling. At this stage, it's more about structure than polish.</p>
+          </div>
+        </header>
+
+        
+        <main className="design-content">
+          <section className="inspiration-block">
+            <h2>Initial Wireframes</h2>
+            <p className="p-summary">
+              These wireframes are rough sketches meant to explore layout and basic content placement. I wasn’t thinking about colours or fonts yet—this was just about figuring out how to guide the user’s journey across the site. Looking back, some layouts didn’t work at all, but that was part of the process. They gave me a starting point to critique and improve.
+            </p>
+
+            <h4>Homepage</h4>
+            <img src="/Images/First Wireframes/Firsy Wireframes- Home.png" alt="Homepage Wireframe Sketch" />
+
+            <h4>Blog</h4>
+            <img src="/Images/First Wireframes/First Wireframe- Blog.png" alt="Blog Wireframe Sketch" />
+
+            <h4>Design</h4>
+            <img src="/Images/First Wireframes/First Wireframes -Design.png" alt="Design Wireframe Sketch" />
+
+            <h4>Portfolio</h4>
+            <img src="/Images/First Wireframes/First Wireframes- Portfolio.png" alt="Portfolio Wireframe Sketch" />
+
+            <h4>Scripts</h4>
+            <img src="/Images/First Wireframes/First Wireframe- Scripts.png" alt="Scripts Wireframe Sketch" />
+          </section>
+
+          <section className="inspiration-block">
+            <h2>Annotated Wireframes</h2>
+            <p className="p-summary">
+              These wireframes are more refined and include detailed annotations for layout logic and interface elements. By this point, I had started to figure out which areas needed stronger structure and which parts could breathe a little more. Annotations helped me think more intentionally about each section—why it’s there, what it should do, and how it connects with the rest of the site.
+            </p>
+
+            <h4>Homepage</h4>
+            <img src="/Images/Wireframe- Homepage.png" alt="Homepage Annotated Wireframe" />
+
+            <h4>Blog</h4>
+            <img src="/Images/Wireframe-Blog Posts.png" alt="Blog Annotated Wireframe" />
+
+            <h4>Design</h4>
+            <img src="/Images/Wireframe-Design.png" alt="Design Annotated Wireframe" />
+
+            <h4>Portfolio</h4>
+            <img src="/Images/Wireframe-Portfolio.png" alt="Portfolio Annotated Wireframe" />
+
+            <h4>Scripts</h4>
+            <img src="/Images/Wireframes- Scripts.png" alt="Scripts Annotated Wireframe" />
+
+            <h4>New Wireframe sketches homepage and portfolio layout (animation, design, writing, essay)</h4>
+            <img src="/Images/Blogs/Reflection 3.png" alt="New Wireframe Sketch" />
+            <p className="p-summary">
+              After implementing my first design, I wasn’t happy with how the homepage looked. Everything felt very out of place and disconnected. The layout seemed random rather than intentional, and the visual hierarchy wasn’t clear. So I decided to redesign the homepage wireframe to better reflect a structured user flow. I wanted visitors to immediately understand where they were and what to do next—without guessing or scrolling aimlessly.
+            </p>
+
+            <img src="/Images/Blogs/Reflection 4.png" alt="Updated Portfolio and Design Sketch" />
+            <p className="p-summary">
+              Additionally, I’m thinking of changing my design and portfolio pages so they feel more unified. Right now, they look like two completely different websites, and that’s not what I want. The whole point is to show that everything is part of the same identity—same thinking, same tone, same user experience. I’m working on new wireframes that bring everything into better alignment and make the transitions between pages feel seamless and intentional.
+            </p>
+          </section>
+
+          <div className="button-container">
+            <Link to="/design/research" className="nav-button">→ Design Research</Link>
+          </div>
+        </main>
+    </>
+  );
+}
