@@ -42,8 +42,10 @@ nav {
   padding: 0.9375rem 1.875rem;
   background-color: var(--background-color);
   font-family: 'heading font', serif;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 101;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
 }
 
 nav .logo {
@@ -96,9 +98,11 @@ nav ul li a:hover {
 }
 
 .design-header h1 {
-  font-size: 3rem;
+  font-size: clamp(2.25rem, 5vw, 3rem);
   font-family: 'heading font', serif;
   color: var(--background-color);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
   margin-bottom: 0.9375rem;
 }
 
@@ -118,10 +122,18 @@ nav ul li a:hover {
 }
 
 .inspiration-block {
-  margin-bottom: 3.125rem;
+  margin-bottom: 3.75rem;
+  padding-bottom: 3.125rem;
+  border-bottom: 0.0625rem solid rgba(95, 81, 67, 0.15);
   opacity: 0;
   transform: translateY(2.5rem);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.inspiration-block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .inspiration-block:hover img {
@@ -133,7 +145,7 @@ nav ul li a:hover {
   max-width: 100%;
   height: auto;
   border-radius: 0.5rem;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.12);
   margin: 0.625rem 0;
 }
 

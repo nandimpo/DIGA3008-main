@@ -109,6 +109,38 @@ export default function PortfolioDesign() {
           </a>
         </div>
       </div>
+      <div className="image-container">
+        <img src="/Images/Portfolio/Istyla Senkosi.png" alt="I'Styla Senkosi" />
+
+        <div className="article-title">I'Styla Senkosi</div>
+
+        <div className="article-content">
+          <input type="checkbox" className="read-more-state" id="post-5" />
+
+          <div className="read-more-wrap">
+            <span className="content-preview">
+              An interactive documentary exploring the past, present, and future of township fashion.
+            </span>
+
+            <span className="read-more-target">
+              I'Styla Senkosi is an interactive documentary experience that traces the evolution of
+              township fashion in South Africa, blending visuals, sound, and storytelling to celebrate
+              style as a form of cultural expression.
+            </span>
+          </div>
+
+          <label htmlFor="post-5" className="read-more-trigger"></label>
+
+          <br /><br />
+
+          <a className="project-link"
+             href="https://nandimpo.github.io/istyla-senkosi/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Visit Website
+          </a>
+        </div>
+      </div>
         </div>
         </section>
         </main>

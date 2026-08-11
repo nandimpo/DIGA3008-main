@@ -2,38 +2,39 @@ document.addEventListener("DOMContentLoaded", () => {
   const mainTitle = document.getElementById("mainTitle");
   const subTitle = document.getElementById("subTitle");
 
+  if (mainTitle) {
+    setTimeout(() => {
+      mainTitle.classList.add("title-animate-in");
+    }, 200);
 
-  setTimeout(() => {
-    mainTitle.classList.add("title-animate-in");
-  }, 200);
+    function highlightTitle() {
+      mainTitle.style.color = "#E1B808";
+    }
 
-  setTimeout(() => {
-    subTitle.classList.add("title-animate-in");
-  }, 600);
+    function resetTitleColor() {
+      mainTitle.style.color = "";
+    }
 
-
-  function highlightTitle() {
-    mainTitle.style.color = "#E1B808";
+    mainTitle.addEventListener("mouseover", highlightTitle);
+    mainTitle.addEventListener("mouseout", resetTitleColor);
+    mainTitle.addEventListener("touchstart", highlightTitle);
   }
 
-  function resetTitleColor() {
-    mainTitle.style.color = "";
-  }
+  if (subTitle) {
+    setTimeout(() => {
+      subTitle.classList.add("title-animate-in");
+    }, 600);
 
-  mainTitle.addEventListener("mouseover", highlightTitle);
-  mainTitle.addEventListener("mouseout", resetTitleColor);
-  mainTitle.addEventListener("touchstart", highlightTitle);
-
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("title-animate-in");
-      }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("title-animate-in");
+        }
+      });
     });
-  });
 
-  observer.observe(subTitle);
+    observer.observe(subTitle);
+  }
 
   
   async function fetchExampleData() {

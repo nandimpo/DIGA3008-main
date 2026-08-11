@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     blocks.forEach((block, index) => {
       block.style.opacity = 0;
-      block.style.transform = `translateY(${config.initialOffset})`;
-      block.style.transition = `opacity ${config.duration} ease-out, transform ${config.duration} ease-out`;
+      block.style.transform = `translateY(${config.initialOffset}) scale(0.95)`;
+      block.style.transition = `opacity ${config.duration} ease-out, transform ${config.transformDuration} cubic-bezier(0.34, 1.56, 0.64, 1)`;
 
       setTimeout(() => {
         block.style.opacity = config.finalOpacity;
@@ -26,11 +26,12 @@ async function fetchBlockAnimationConfig() {
     const data = await response.json();
 
     return {
-      initialOffset: "40px",
-      finalTransform: "translateY(0)",
+      initialOffset: "60px",
+      finalTransform: "translateY(0) scale(1)",
       finalOpacity: 1,
-      duration: "0.6s",
-      stagger: 200
+      duration: "0.7s",
+      transformDuration: "0.8s",
+      stagger: 250
     };
   } catch (err) {
     throw new Error("Could not load animation configuration");

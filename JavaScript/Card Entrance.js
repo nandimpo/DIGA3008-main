@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     cards.forEach(card => {
       card.style.opacity = 0;
-      card.style.transform = "translateY(40px)";
-      card.style.transition = "opacity 0.8s ease-out, transform 0.8s ease-out";
+      card.style.transform = "translateY(60px) scale(0.95)";
+      card.style.transition = "opacity 0.8s ease-out, transform 0.9s cubic-bezier(0.34, 1.56, 0.64, 1)";
       observer.observe(card);
     });
   } catch (error) {
@@ -32,7 +32,7 @@ async function fetchAnimationConfig() {
     return {
       threshold: 0.2,
       opacity: 1,
-      transform: "translateY(0)"
+      transform: "translateY(0) scale(1)"
     };
   } catch (err) {
     throw new Error("Unable to fetch animation configuration");

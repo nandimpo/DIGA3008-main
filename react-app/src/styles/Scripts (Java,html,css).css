@@ -6,10 +6,11 @@
 
 .scripts-heading-wrapper h1 {
   font-family: var(--heading-font);
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
   font-weight: bold;
   color: #EBE4D2;
   text-transform: uppercase;
+  letter-spacing: 0.03em;
   text-shadow: 0.063rem 0.063rem 0.188rem rgba(0, 0, 0, 0.3);
   position: relative;
   display: inline-block;
@@ -58,7 +59,7 @@
   background: linear-gradient(to bottom, #fdfdfd, #f8f4eb);
   border: 0.125rem solid rgba(209, 118, 9, 0.3);
   border-radius: 1.125rem;
-  box-shadow: 0 0 20px rgba(0, 255, 128, 0.25); /* ✨ Green glow added */
+  box-shadow: 0 0.5rem 1.75rem rgba(95, 81, 67, 0.22);
   max-width: 56.25rem;
   overflow: hidden;
   padding: 0;
@@ -119,13 +120,17 @@
 
 .read-more-btn:hover {
   background-color: var(--button-hover);
-  transform: translateY(-0.188rem);
+  transform: translateY(-0.25rem) scale(1.06);
   box-shadow: 0 0.375rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.read-more-btn:active {
+  transform: translateY(0) scale(0.96);
 }
 
 .card:hover {
   border-left: 0.375rem solid var(--accent-color);
-  transform: translateY(-0.375rem);
+  transform: translateY(-0.5rem) scale(1.01);
 }
 
 .card + .card {
