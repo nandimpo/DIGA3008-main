@@ -4,6 +4,7 @@ import CursorPulse from './CursorPulse';
 import Nav from './Nav';
 import Footer from './Footer';
 import useScrollReveal from '../hooks/useScrollReveal';
+import useTypewriter from '../hooks/useTypewriter';
 
 export default function Layout() {
   const { pathname } = useLocation();
@@ -13,6 +14,7 @@ export default function Layout() {
   }, [pathname]);
 
   useScrollReveal(pathname);
+  useTypewriter(pathname);
 
   return (
     <>

@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const links = [
   { to: '/portfolio', label: 'Portfolio' },
-  { to: '/portfolio/essays', label: 'Essays' },
+  { to: '/portfolio/essays', label: 'Previous Work' },
   { to: '/portfolio/animation', label: 'Animation' },
   { to: '/portfolio/design', label: 'Design' },
 ];

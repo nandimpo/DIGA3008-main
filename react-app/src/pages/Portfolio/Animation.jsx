@@ -28,7 +28,7 @@ export default function Animation() {
 
               <Link className="project-row" to="/portfolio/animation/3d-walk-cycle">
                 <span className="project-row-body">
-                  <span className="project-row-title">3D Walk Cycle</span>
+                  <span className="project-row-title"><span className="glyph-fallback">3</span>D Walk Cycle</span>
                   <span className="project-row-hook">A character walk cycle built around timing, exaggeration, and anticipation.</span>
                 </span>
                 <span className="project-row-arrow" aria-hidden="true">→</span>

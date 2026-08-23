@@ -5,12 +5,12 @@ import PortfolioFooterNav from '../../components/PortfolioFooterNav';
 export default function ThreeDWalkCycle() {
   return (
     <>
-      <main className="project-row-section">
-        <div className="notebook-sheet">
+      <main className="notebook-sheet">
+        <div className="notebook-content">
           <Link className="project-detail-back" to="/portfolio/animation">← Back to Animations</Link>
 
           <p className="project-detail-eyebrow">Animation</p>
-          <h1 className="project-detail-title">3D Walk Cycle</h1>
+          <h1 className="project-detail-title"><span className="glyph-fallback">3</span>D Walk Cycle</h1>
           <p className="project-detail-summary">
             A character walk cycle built to explore the core principles of animation — timing, exaggeration,
             and anticipation — through a single repeating motion.

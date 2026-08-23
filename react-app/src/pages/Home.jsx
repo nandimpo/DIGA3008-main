@@ -90,20 +90,8 @@ export default function Home() {
         <h2 className="case-studies-heading">Stories Behind the Work</h2>
 
         <div className="case-study-list">
-          <a className="case-study-row" href="https://nandimpo.github.io/Rock-Creative-Agency/" target="_blank" rel="noopener noreferrer">
-            <span className="case-study-number">01</span>
-            <span className="case-study-body">
-              <span className="case-study-title">Rock Creative Agency</span>
-              <span className="case-study-hook">A branding &amp; PR agency site built to feel as solid as the work it sells — bold type, confident motion, and a story worth trusting.</span>
-            </span>
-            <span className="case-study-tags">
-              <span className="case-study-tag">Branding</span>
-              <span className="case-study-tag">Website Design</span>
-            </span>
-          </a>
-
           <a className="case-study-row" href="https://nandimpo.github.io/Assignment-2/" target="_blank" rel="noopener noreferrer">
-            <span className="case-study-number">02</span>
+            <span className="case-study-number">01</span>
             <span className="case-study-body">
               <span className="case-study-title">ABSA NextGen Wealth Studio</span>
               <span className="case-study-hook">Reframing wealth management as something a younger generation could actually want to open — a sleek, guided, human experience.</span>
@@ -115,7 +103,7 @@ export default function Home() {
           </a>
 
           <a className="case-study-row" href="https://nandimpo.github.io/istyla-senkosi/" target="_blank" rel="noopener noreferrer">
-            <span className="case-study-number">03</span>
+            <span className="case-study-number">02</span>
             <span className="case-study-body">
               <span className="case-study-title">I'Styla Senkosi</span>
               <span className="case-study-hook">An interactive documentary tracing township fashion's past, present &amp; future — where storytelling and interface design meet.</span>
@@ -123,6 +111,18 @@ export default function Home() {
             <span className="case-study-tags">
               <span className="case-study-tag">Storytelling</span>
               <span className="case-study-tag">Interactive Documentary</span>
+            </span>
+          </a>
+
+          <a className="case-study-row" href="https://nandimpo.github.io/Rock-Creative-Agency/" target="_blank" rel="noopener noreferrer">
+            <span className="case-study-number">03</span>
+            <span className="case-study-body">
+              <span className="case-study-title">Rock Creative Agency</span>
+              <span className="case-study-hook">A branding &amp; PR agency site built to feel as solid as the work it sells — bold type, confident motion, and a story worth trusting.</span>
+            </span>
+            <span className="case-study-tags">
+              <span className="case-study-tag">Branding</span>
+              <span className="case-study-tag">Website Design</span>
             </span>
           </a>
         </div>

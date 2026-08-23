@@ -20,14 +20,6 @@ export default function PortfolioDesign() {
         <main>
           <section className="project-row-section">
             <div className="project-row-list">
-              <Link className="project-row" to="/portfolio/design/rock-creative-agency">
-                <span className="project-row-body">
-                  <span className="project-row-title">Rock Creative Agency</span>
-                  <span className="project-row-hook">A branding and PR agency website designed for a service-based business.</span>
-                </span>
-                <span className="project-row-arrow" aria-hidden="true">→</span>
-              </Link>
-
               <Link className="project-row" to="/portfolio/design/absa-nextgen">
                 <span className="project-row-body">
                   <span className="project-row-title">ABSA NextGen Wealth Studio</span>
@@ -40,6 +32,14 @@ export default function PortfolioDesign() {
                 <span className="project-row-body">
                   <span className="project-row-title">I'Styla Senkosi</span>
                   <span className="project-row-hook">An interactive documentary exploring the past, present, and future of township fashion.</span>
+                </span>
+                <span className="project-row-arrow" aria-hidden="true">→</span>
+              </Link>
+
+              <Link className="project-row" to="/portfolio/design/rock-creative-agency">
+                <span className="project-row-body">
+                  <span className="project-row-title">Rock Creative Agency</span>
+                  <span className="project-row-hook">A branding and PR agency website designed for a service-based business.</span>
                 </span>
                 <span className="project-row-arrow" aria-hidden="true">→</span>
               </Link>

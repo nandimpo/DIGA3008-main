@@ -5,8 +5,8 @@ import PortfolioFooterNav from '../../components/PortfolioFooterNav';
 export default function HomerEvolution() {
   return (
     <>
-      <main className="project-row-section">
-        <div className="notebook-sheet">
+      <main className="notebook-sheet">
+        <div className="notebook-content">
           <Link className="project-detail-back" to="/portfolio/animation">← Back to Animations</Link>
 
           <p className="project-detail-eyebrow">Animation</p>

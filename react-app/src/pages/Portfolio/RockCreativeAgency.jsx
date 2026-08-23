@@ -5,8 +5,8 @@ import PortfolioFooterNav from '../../components/PortfolioFooterNav';
 export default function RockCreativeAgency() {
   return (
     <>
-      <main className="project-row-section">
-        <div className="notebook-sheet">
+      <main className="notebook-sheet">
+        <div className="notebook-content">
           <Link className="project-detail-back" to="/portfolio/design">← Back to Design</Link>
 
           <p className="project-detail-eyebrow">Design</p>
@@ -16,7 +16,7 @@ export default function RockCreativeAgency() {
             as the work it sells.
           </p>
 
-          <img className="project-detail-hero" src="/Images/Portfolio/Rock Creative Agency.png" alt="Rock Creative Agency website design" />
+          <img className="project-detail-hero" src="/Images/Portfolio/Rock Creative Agency/1.png" alt="Rock Creative Agency website design" />
 
           <div className="project-detail-body">
             <div className="project-detail-story">
@@ -41,10 +41,51 @@ export default function RockCreativeAgency() {
 
           <a className="btn project-detail-visit" href="https://nandimpo.github.io/Rock-Creative-Agency/" target="_blank" rel="noopener noreferrer">Visit Website</a>
 
-          <p className="project-detail-note">
-            More process shots coming soon — early moodboards, wireframes, or before/after comparisons would
-            make a great addition here.
-          </p>
+          <div className="project-detail-gallery">
+            <figure className="project-detail-frame">
+              <img src="/Images/Portfolio/Rock Creative Agency/2.png" alt="Rock Creative Agency Who We Are section" />
+              <figcaption>Who We Are — Bold, Creative, Caring</figcaption>
+            </figure>
+            <figure className="project-detail-frame">
+              <img src="/Images/Portfolio/Rock Creative Agency/5.png" alt="Rock Creative Agency Our Work section" />
+              <figcaption>Our Work — client roster</figcaption>
+            </figure>
+            <figure className="project-detail-frame">
+              <img src="/Images/Portfolio/Rock Creative Agency/9.png" alt="Rock Creative Agency work grid" />
+              <figcaption>Work grid — Braam, Metro FM, Loeries, Cannes</figcaption>
+            </figure>
+            <figure className="project-detail-frame">
+              <img src="/Images/Portfolio/Rock Creative Agency/6.png" alt="Rock Creative Agency additional screen" />
+            </figure>
+            <figure className="project-detail-frame">
+              <img src="/Images/Portfolio/Rock Creative Agency/11.png" alt="Rock Creative Agency additional screen" />
+            </figure>
+            <figure className="project-detail-frame">
+              <img src="/Images/Portfolio/Rock Creative Agency/15.png" alt="Rock Creative Agency additional screen" />
+            </figure>
+          </div>
+
+          <div className="project-detail-process">
+            <h2 className="project-detail-process-heading">From My Design Journal</h2>
+            <p className="project-detail-process-note">
+              Before the bold typography and confident scroll, there was a design document — user research,
+              a typeface system, and an annotated wireframe mapping every GSAP interaction.
+            </p>
+            <div className="process-scroll">
+              <figure className="process-page">
+                <img src="/Images/DesignProcess/Assignment 1 - Design Document/1.png" alt="Rock Creative Agency design document cover" />
+                <figcaption>Design document cover</figcaption>
+              </figure>
+              <figure className="process-page">
+                <img src="/Images/DesignProcess/Assignment 1 - Design Document/5.png" alt="Rock Creative Agency user research persona" />
+                <figcaption>User research — meet Zama</figcaption>
+              </figure>
+              <figure className="process-page">
+                <img src="/Images/DesignProcess/Wireframes - Rock creative agency/Screenshot 2026-08-24 004406.png" alt="Rock Creative Agency annotated homepage wireframe" />
+                <figcaption>Annotated homepage wireframe — GSAP interaction notes</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </main>
 

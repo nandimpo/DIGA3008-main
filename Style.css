@@ -261,6 +261,15 @@
   color: var(--accent-color, #E1B808);
 }
 
+.case-study-thumb {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.25);
+}
+
 .case-study-body {
   flex: 1 1 20rem;
   display: flex;

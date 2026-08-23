@@ -25,43 +25,108 @@ export default function PortfolioHome() {
             </h1>
             <p id="subTitle">Animation | Design | Essays</p>
             <p className="portfolio-intro">
-              I am Nandi Mpofu and I am from Johannesburg. I am an animator, designer, and writer. I am currently proficient in English and French writing. The software I'm most comfortable with includes Unity, Blender, and the Photoshop suite. I'm particularly interested in design—specifically editorial design and production design.  
+              I am Nandi Mpofu and I am from Johannesburg. I am an animator, designer, and writer. I am currently proficient in English and French writing. The software I'm most comfortable with includes Unity, Blender, and the Photoshop suite. I'm particularly interested in design—specifically editorial design and production design.
             </p>
-          </div>
-
-          <section className="skills-section">
-            <h2>My skills</h2>
-            
-            <div className="skills-container">
-              <div className="skills-column">
-                <h3>Skills</h3>
-                <ul className="skills-list">
-                  <li><i className="fa-brands fa-adobe" aria-hidden="true"></i> Adobe Creative Cloud</li>
-                  <li><i className="fa-brands fa-microsoft" aria-hidden="true"></i> Microsoft Office</li>
-                  <li><i className="fa-solid fa-cube" aria-hidden="true"></i> Unity</li>
-                  <li><i className="fa-solid fa-palette" aria-hidden="true"></i> Canva</li>
-                  <li><i className="fa-solid fa-cubes" aria-hidden="true"></i> Blender</li>
-                  <li><i className="fa-solid fa-code" aria-hidden="true"></i> Coding (C# / CSS / HTML / JavaScript)</li>
-                </ul>
-              </div>
-
-              <div className="skills-column">
-                <h3>Languages</h3>
-                <ul className="skills-list">
-                  <li><i className="fa-solid fa-language" aria-hidden="true"></i> English</li>
-                  <li><i className="fa-solid fa-language" aria-hidden="true"></i> French</li>
-                  <li><i className="fa-solid fa-language" aria-hidden="true"></i> IsiZulu</li>
-                </ul>
-              </div>
-            </div>
 
             <div className="portfolio-buttons">
-              <Link to="/portfolio/animation" className="portfolio-link">Animation</Link>
-              <Link to="/portfolio/design" className="portfolio-link">Design</Link>
-              <Link to="/portfolio/essays" className="portfolio-link">Previous Work</Link>
+              <a href="#portfolio-animations" className="portfolio-link">Animation</a>
+              <a href="#portfolio-designs" className="portfolio-link">Design</a>
+              <a href="#portfolio-previous-work" className="portfolio-link">Previous Work</a>
             </div>
-          </section>
+          </div>
         </div>
+
+        <section className="project-row-section" id="portfolio-skills">
+          <div className="skill-block-inner">
+            <h2 className="skill-block-heading">Skills</h2>
+            <div className="skill-tags">
+              <span className="skill-tag"><i className="fa-brands fa-adobe" aria-hidden="true"></i> Adobe Creative Cloud</span>
+              <span className="skill-tag"><i className="fa-brands fa-microsoft" aria-hidden="true"></i> Microsoft Office</span>
+              <span className="skill-tag"><i className="fa-solid fa-cube" aria-hidden="true"></i> Unity</span>
+              <span className="skill-tag"><i className="fa-solid fa-palette" aria-hidden="true"></i> Canva</span>
+              <span className="skill-tag"><i className="fa-solid fa-cubes" aria-hidden="true"></i> Blender</span>
+              <span className="skill-tag"><i className="fa-solid fa-code" aria-hidden="true"></i> Coding (C# / CSS / HTML / JavaScript)</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="project-row-section" id="portfolio-languages">
+          <div className="skill-block-inner">
+            <h2 className="skill-block-heading">Languages</h2>
+            <div className="skill-tags">
+              <span className="skill-tag"><i className="fa-solid fa-language" aria-hidden="true"></i> English</span>
+              <span className="skill-tag"><i className="fa-solid fa-language" aria-hidden="true"></i> French</span>
+              <span className="skill-tag"><i className="fa-solid fa-language" aria-hidden="true"></i> IsiZulu</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="project-row-section" id="portfolio-animations">
+          <h2 className="project-row-heading">Animations</h2>
+          <div className="project-row-list">
+            <Link className="project-row" to="/portfolio/animation/homer-evolution">
+              <span className="project-row-body">
+                <span className="project-row-title">Homer Simpson — An Animation Evolution</span>
+                <span className="project-row-hook">Three studies tracing one character from a blinking loop to a full walk cycle to weighted object interaction.</span>
+              </span>
+              <span className="project-row-arrow" aria-hidden="true">→</span>
+            </Link>
+            <Link className="project-row" to="/portfolio/animation/3d-walk-cycle">
+              <span className="project-row-body">
+                <span className="project-row-title"><span className="glyph-fallback">3</span>D Walk Cycle</span>
+                <span className="project-row-hook">A character walk cycle built around timing, exaggeration, and anticipation.</span>
+              </span>
+              <span className="project-row-arrow" aria-hidden="true">→</span>
+            </Link>
+            <Link className="project-row" to="/portfolio/animation/lip-sync">
+              <span className="project-row-body">
+                <span className="project-row-title">Lip Sync</span>
+                <span className="project-row-hook">A character performance study focused on timing, staging, and lip sync accuracy.</span>
+              </span>
+              <span className="project-row-arrow" aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </section>
+
+        <section className="project-row-section" id="portfolio-designs">
+          <h2 className="project-row-heading">Designs</h2>
+          <div className="project-row-list">
+            <Link className="project-row" to="/portfolio/design/absa-nextgen">
+              <span className="project-row-body">
+                <span className="project-row-title">ABSA NextGen Wealth Studio</span>
+                <span className="project-row-hook">A modern wealth management experience designed for the next generation of investors.</span>
+              </span>
+              <span className="project-row-arrow" aria-hidden="true">→</span>
+            </Link>
+            <Link className="project-row" to="/portfolio/design/istyla-senkosi">
+              <span className="project-row-body">
+                <span className="project-row-title">I'Styla Senkosi</span>
+                <span className="project-row-hook">An interactive documentary exploring the past, present, and future of township fashion.</span>
+              </span>
+              <span className="project-row-arrow" aria-hidden="true">→</span>
+            </Link>
+            <Link className="project-row" to="/portfolio/design/rock-creative-agency">
+              <span className="project-row-body">
+                <span className="project-row-title">Rock Creative Agency</span>
+                <span className="project-row-hook">A branding and PR agency website designed for a service-based business.</span>
+              </span>
+              <span className="project-row-arrow" aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </section>
+
+        <section className="project-row-section" id="portfolio-previous-work">
+          <h2 className="project-row-heading">Previous Work</h2>
+          <div className="project-row-list">
+            <Link className="project-row" to="/portfolio/essays">
+              <span className="project-row-body">
+                <span className="project-row-title">My CV &amp; Experience</span>
+                <span className="project-row-hook">Profile, education, and a full employment history.</span>
+              </span>
+              <span className="project-row-arrow" aria-hidden="true">→</span>
+            </Link>
+          </div>
+        </section>
     </>
   );
 }
