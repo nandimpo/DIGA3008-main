@@ -10,48 +10,62 @@ export default function Home() {
   return (
     <>
       <nav className="chapter-nav" aria-label="Page chapters">
-        <a href="#hero" className="chapter-dot active" data-chapter="hero"><span>Intro</span></a>
+        <a href="#intro" className="chapter-dot active" data-chapter="intro"><span>Intro</span></a>
         <a href="#story" className="chapter-dot" data-chapter="story"><span>Story</span></a>
+        <a href="#case-studies" className="chapter-dot" data-chapter="case-studies"><span>Case Studies</span></a>
         <a href="#work" className="chapter-dot" data-chapter="work"><span>Work</span></a>
         <a href="#contact" className="chapter-dot" data-chapter="contact"><span>Contact</span></a>
       </nav>
 
-      <div id="hero" className="hero-background-wrapper">
-        <div className="hero-overlay">
-          <h1 className="hero-heading title-hidden" id="mainTitle"><span className="word">Nandi</span> <span className="word">Mpofu</span></h1>
-          <p className="hero-subheading title-hidden" id="subTitle">
-            Design <span className="divider">|</span>
-            Animation <span className="divider">|</span>
-            Writing
-          </p>
-          <a href="#story" className="about-link">About Me</a>
-
-          <div className="scroll-cue">
-            <span>Scroll to explore</span>
-            <i className="fa-solid fa-chevron-down"></i>
-          </div>
+      <section id="intro" className="story-intro-section">
+        <div className="story-intro-corner">
+          <span className="story-intro-name">Nandi <em>Mpofu</em></span>
+          <span className="story-intro-logo" aria-hidden="true">
+            <svg viewBox="0 0 60 60">
+              <circle className="logo-ring" cx="30" cy="30" r="26" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="6 8" strokeLinecap="round" />
+              <circle className="logo-core" cx="30" cy="30" r="14" />
+              <text x="30" y="35" textAnchor="middle" className="logo-initials">NM</text>
+            </svg>
+          </span>
         </div>
 
-        <svg className="hero-wave" viewBox="0 0 1600 200" preserveAspectRatio="none" aria-hidden="true">
-          <g className="wave wave-back">
-            <path d="M0,120 C200,180 400,60 600,110 C800,160 1000,60 1200,100 C1350,130 1500,90 1600,110 L1600,200 L0,200 Z" />
-            <path d="M0,120 C200,180 400,60 600,110 C800,160 1000,60 1200,100 C1350,130 1500,90 1600,110 L1600,200 L0,200 Z" transform="translate(1600 0)" />
-          </g>
-          <g className="wave wave-mid">
-            <path d="M0,140 C220,90 420,170 640,130 C860,90 1040,170 1260,120 C1400,90 1520,140 1600,130 L1600,200 L0,200 Z" />
-            <path d="M0,140 C220,90 420,170 640,130 C860,90 1040,170 1260,120 C1400,90 1520,140 1600,130 L1600,200 L0,200 Z" transform="translate(1600 0)" />
-          </g>
-          <g className="wave wave-front">
-            <path d="M0,160 C240,130 460,190 680,150 C900,110 1080,180 1300,150 C1420,135 1520,160 1600,150 L1600,200 L0,200 Z" />
-            <path d="M0,160 C240,130 460,190 680,150 C900,110 1080,180 1300,150 C1420,135 1520,160 1600,150 L1600,200 L0,200 Z" transform="translate(1600 0)" />
-          </g>
-        </svg>
-      </div>
+        <div className="story-intro-content">
+          <h1 id="mainTitle" className="story-intro-stack" role="text" aria-label="Storytelling is Fun, Storytelling is Everywhere, Storytelling is Design, Storytelling is Creative, Storytelling is Nandi">
+            <span className="story-intro-highlight" aria-hidden="true">Storytelling</span>
+            <span className="story-intro-is" aria-hidden="true">is</span>
+            <span className="story-intro-cycle-wrap" aria-hidden="true">
+              <span className="story-intro-cycle">
+                <span className="cycle-word">Fun</span>
+                <span className="cycle-word">Everywhere</span>
+                <span className="cycle-word">Design</span>
+                <span className="cycle-word">Creative</span>
+                <span className="cycle-word">Nandi</span>
+              </span>
+              <span className="story-intro-rule"></span>
+            </span>
+          </h1>
+
+          <p className="story-intro-aside" aria-hidden="true">
+            <svg className="story-intro-aside-arrow" viewBox="0 0 90 60" aria-hidden="true">
+              <defs>
+                <marker id="arrowhead-aside" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+                  <path d="M0,0 L8,4 L0,8 Z" fill="currentColor" />
+                </marker>
+              </defs>
+              <path d="M8,10 C 30,15 50,35 78,50" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" markerEnd="url(#arrowhead-aside)" />
+            </svg>
+            <span>What do you think?</span>
+          </p>
+        </div>
+      </section>
 
       <section id="story" className="about-section">
         <div className="about-container">
           <div className="about-text">
             <h2>This is<br /><span>My Story</span></h2>
+            <p className="story-beat">
+              I am a <strong>people to people designer</strong>. A logical creative — I use art, technology &amp; storytelling to try and make the world a better place. I just love to design.
+            </p>
             <p className="story-beat">
               I fell in love with design through storytelling—across illustration, animation, and interaction.
             </p>
@@ -68,6 +82,49 @@ export default function Home() {
           <div className="about-image">
             <img src="/Images/Miscallanous/About me.gif" alt="These are series of photos that I took for my 'About Me' page" />
           </div>
+        </div>
+      </section>
+
+      <section id="case-studies" className="case-studies-section">
+        <p className="case-studies-label">Case Studies</p>
+        <h2 className="case-studies-heading">Stories Behind the Work</h2>
+
+        <div className="case-study-list">
+          <a className="case-study-row" href="https://nandimpo.github.io/Rock-Creative-Agency/" target="_blank" rel="noopener noreferrer">
+            <span className="case-study-number">01</span>
+            <span className="case-study-body">
+              <span className="case-study-title">Rock Creative Agency</span>
+              <span className="case-study-hook">A branding &amp; PR agency site built to feel as solid as the work it sells — bold type, confident motion, and a story worth trusting.</span>
+            </span>
+            <span className="case-study-tags">
+              <span className="case-study-tag">Branding</span>
+              <span className="case-study-tag">Website Design</span>
+            </span>
+          </a>
+
+          <a className="case-study-row" href="https://nandimpo.github.io/Assignment-2/" target="_blank" rel="noopener noreferrer">
+            <span className="case-study-number">02</span>
+            <span className="case-study-body">
+              <span className="case-study-title">ABSA NextGen Wealth Studio</span>
+              <span className="case-study-hook">Reframing wealth management as something a younger generation could actually want to open — a sleek, guided, human experience.</span>
+            </span>
+            <span className="case-study-tags">
+              <span className="case-study-tag">UX/UI</span>
+              <span className="case-study-tag">Interaction Design</span>
+            </span>
+          </a>
+
+          <a className="case-study-row" href="https://nandimpo.github.io/istyla-senkosi/" target="_blank" rel="noopener noreferrer">
+            <span className="case-study-number">03</span>
+            <span className="case-study-body">
+              <span className="case-study-title">I'Styla Senkosi</span>
+              <span className="case-study-hook">An interactive documentary tracing township fashion's past, present &amp; future — where storytelling and interface design meet.</span>
+            </span>
+            <span className="case-study-tags">
+              <span className="case-study-tag">Storytelling</span>
+              <span className="case-study-tag">Interactive Documentary</span>
+            </span>
+          </a>
         </div>
       </section>
 
@@ -92,13 +149,6 @@ export default function Home() {
             <Link to="/portfolio">
               <img src="/Images/Miscallanous/portfolio home 2.jpg" alt="This image is an icon that represents the Portfolio Homepage" />
               <p className="work-title">Portfolio</p>
-              <p className="work-year">2025</p>
-            </Link>
-          </div>
-          <div className="recent-item">
-            <Link to="/scripts">
-              <img src="/Images/Miscallanous/scripts home 2.jpg" alt="This image is an icon that represents the Scripts homepage" />
-              <p className="work-title">Scripts</p>
               <p className="work-year">2025</p>
             </Link>
           </div>

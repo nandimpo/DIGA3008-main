@@ -5,12 +5,14 @@ import Home from './pages/Home';
 
 import PortfolioHome from './pages/Portfolio/PortfolioHome';
 import Animation from './pages/Portfolio/Animation';
+import HomerEvolution from './pages/Portfolio/HomerEvolution';
+import ThreeDWalkCycle from './pages/Portfolio/ThreeDWalkCycle';
+import LipSync from './pages/Portfolio/LipSync';
 import PortfolioDesign from './pages/Portfolio/PortfolioDesign';
+import RockCreativeAgency from './pages/Portfolio/RockCreativeAgency';
+import AbsaNextGen from './pages/Portfolio/AbsaNextGen';
+import IstylaSenkosi from './pages/Portfolio/IstylaSenkosi';
 import Essays from './pages/Portfolio/Essays';
-import Writing from './pages/Portfolio/Writing';
-import Writing2 from './pages/Portfolio/Writing2';
-
-import ScriptsHome from './pages/ScriptsHome';
 
 import BlogsHome from './pages/Blogs/BlogsHome';
 import Blog1 from './pages/Blogs/Blog1';
@@ -45,12 +47,14 @@ export default function App() {
 
         <Route path="/portfolio" element={<PortfolioHome />} />
         <Route path="/portfolio/animation" element={<Animation />} />
+        <Route path="/portfolio/animation/homer-evolution" element={<HomerEvolution />} />
+        <Route path="/portfolio/animation/3d-walk-cycle" element={<ThreeDWalkCycle />} />
+        <Route path="/portfolio/animation/lip-sync" element={<LipSync />} />
         <Route path="/portfolio/design" element={<PortfolioDesign />} />
+        <Route path="/portfolio/design/rock-creative-agency" element={<RockCreativeAgency />} />
+        <Route path="/portfolio/design/absa-nextgen" element={<AbsaNextGen />} />
+        <Route path="/portfolio/design/istyla-senkosi" element={<IstylaSenkosi />} />
         <Route path="/portfolio/essays" element={<Essays />} />
-        <Route path="/portfolio/writing" element={<Writing />} />
-        <Route path="/portfolio/writing-2" element={<Writing2 />} />
-
-        <Route path="/scripts" element={<ScriptsHome />} />
 
         <Route path="/blogs" element={<BlogsHome />} />
         <Route path="/blogs/1" element={<Blog1 />} />

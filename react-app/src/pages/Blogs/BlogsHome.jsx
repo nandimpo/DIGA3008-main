@@ -10,7 +10,18 @@ export default function BlogsHome() {
   return (
     <>
       <section className="blogs-header">
-          <h1>BLOGS</h1>
+          <h1 id="mainTitle" className="story-intro-stack story-intro-stack--center" role="text" aria-label="My Blogs are Thought-Provoking, My Blogs are Not Boring, My Blogs are Deep">
+            <span className="story-intro-highlight" aria-hidden="true">My Blogs</span>
+            <span className="story-intro-is" aria-hidden="true">are</span>
+            <span className="story-intro-cycle-wrap" aria-hidden="true">
+              <span className="story-intro-cycle" style={{ minWidth: '13ch' }}>
+                <span className="cycle-word" style={{ animationDuration: '3.6s', animationDelay: '0s' }}>Thought-Provoking</span>
+                <span className="cycle-word" style={{ animationDuration: '3.6s', animationDelay: '-1.2s' }}>Not Boring</span>
+                <span className="cycle-word" style={{ animationDuration: '3.6s', animationDelay: '-2.4s' }}>Deep</span>
+              </span>
+              <span className="story-intro-rule"></span>
+            </span>
+          </h1>
           <p>In this section you will find my blogs thus far.</p>
         </section>
 

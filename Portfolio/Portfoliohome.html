@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../CSS/Portfolio(home).css" />
   
   <script src="https://kit.fontawesome.com/89fd46d92d.js" crossorigin="anonymous" defer></script>
+  <script src="../JavaScript/Handwriting.js" defer></script>
 </head>
 
 <body>
@@ -24,7 +25,6 @@
       <li><a href="../index.html">Home</a></li>
       <li><a href="../Blogs/BlogsHome.html">Blogs</a></li>
       <li><a href="../Design/DesignHome.html">Design</a></li>
-      <li><a href="../Scripts/Scriptshome.html">Scripts</a></li>
       <li><a href="../Portfolio/Portfoliohome.html" class="active">Portfolio</a></li>
       <a href="https://www.linkedin.com/in/nandi-m-4aa89123b" class="linkedin-icon" target="_blank" rel="noopener noreferrer">
         <i class="fa-brands fa-linkedin"></i>
@@ -34,8 +34,19 @@
 
   <div class="portfolio-container">
     <div class="portfolio-header">
-      <h1 id="mainTitle">My Portfolio</h1>
-      <p id="subTitle">Animation | Writing | Design | Essays</p>
+      <h1 id="mainTitle" class="story-intro-stack story-intro-stack--center" role="text" aria-label="My Portfolio is Me, My Portfolio is Versatile, My Portfolio is Jampacked">
+        <span class="story-intro-highlight" aria-hidden="true">My Portfolio</span>
+        <span class="story-intro-is" aria-hidden="true">is</span>
+        <span class="story-intro-cycle-wrap" aria-hidden="true">
+          <span class="story-intro-cycle" style="min-width: 8ch;">
+            <span class="cycle-word" style="animation-duration: 3.6s; animation-delay: 0s;">Me</span>
+            <span class="cycle-word" style="animation-duration: 3.6s; animation-delay: -1.2s;">Versatile</span>
+            <span class="cycle-word" style="animation-duration: 3.6s; animation-delay: -2.4s;">Jampacked</span>
+          </span>
+          <span class="story-intro-rule"></span>
+        </span>
+      </h1>
+      <p id="subTitle">Animation | Design | Essays</p>
       <p class="portfolio-intro">
         I am Nandi Mpofu and I am from Johannesburg. I am an animator, designer, and writer. I am currently proficient in English and French writing. The software I'm most comfortable with includes Unity, Blender, and the Photoshop suite. I'm particularly interested in design—specifically editorial design and production design.  
       </p>
@@ -48,28 +59,27 @@
         <div class="skills-column">
           <h3>Skills</h3>
           <ul class="skills-list">
-            <li>Adobe Creative Cloud</li>
-            <li>Microsoft Office</li>
-            <li>Unity</li>
-            <li>Canva</li>
-            <li>Blender</li>
-            <li>Coding (C# / CSS / HTML / JavaScript)</li>
+            <li><i class="fa-brands fa-adobe" aria-hidden="true"></i> Adobe Creative Cloud</li>
+            <li><i class="fa-brands fa-microsoft" aria-hidden="true"></i> Microsoft Office</li>
+            <li><i class="fa-solid fa-cube" aria-hidden="true"></i> Unity</li>
+            <li><i class="fa-solid fa-palette" aria-hidden="true"></i> Canva</li>
+            <li><i class="fa-solid fa-cubes" aria-hidden="true"></i> Blender</li>
+            <li><i class="fa-solid fa-code" aria-hidden="true"></i> Coding (C# / CSS / HTML / JavaScript)</li>
           </ul>
         </div>
-        
+
         <div class="skills-column">
           <h3>Languages</h3>
           <ul class="skills-list">
-            <li>English</li>
-            <li>French</li>
-            <li>IsiZulu</li>
+            <li><i class="fa-solid fa-language" aria-hidden="true"></i> English</li>
+            <li><i class="fa-solid fa-language" aria-hidden="true"></i> French</li>
+            <li><i class="fa-solid fa-language" aria-hidden="true"></i> IsiZulu</li>
           </ul>
         </div>
       </div>
 
       <div class="portfolio-buttons">
         <a href="Animation.html" class="portfolio-link">Animation</a>
-        <a href="Writing.Html" class="portfolio-link">Writing</a>
         <a href="Design.html" class="portfolio-link">Design</a>
         <a href="Essays.Html" class="portfolio-link">Previous Work</a>
       </div>

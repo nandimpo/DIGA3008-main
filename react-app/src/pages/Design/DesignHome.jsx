@@ -12,7 +12,19 @@ export default function DesignHome() {
   return (
     <>
       <header className="design-header">
-          <h1 id="mainTitle" className="title-hidden">DESIGN</h1>
+          <h1 id="mainTitle" className="story-intro-stack story-intro-stack--center" role="text" aria-label="My Designs are Unique, My Designs are Grounded, My Designs are People Focused, My Designs are Cool">
+            <span className="story-intro-highlight" aria-hidden="true">My Designs</span>
+            <span className="story-intro-is" aria-hidden="true">are</span>
+            <span className="story-intro-cycle-wrap" aria-hidden="true">
+              <span className="story-intro-cycle" style={{ minWidth: '12ch' }}>
+                <span className="cycle-word" style={{ animationDuration: '4.8s', animationDelay: '0s' }}>Unique</span>
+                <span className="cycle-word" style={{ animationDuration: '4.8s', animationDelay: '-1.2s' }}>Grounded</span>
+                <span className="cycle-word" style={{ animationDuration: '4.8s', animationDelay: '-2.4s' }}>People Focused</span>
+                <span className="cycle-word" style={{ animationDuration: '4.8s', animationDelay: '-3.6s' }}>Cool</span>
+              </span>
+              <span className="story-intro-rule"></span>
+            </span>
+          </h1>
           <p id="subTitle" className="title-hidden">
             The goal of my website is for users to understand who I am as a designer. I would also like my website to be user-friendly.
             Therefore, it will be clear, understandable, and accessible. I would like my website to be warm, welcoming, and inviting.
