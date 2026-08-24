@@ -32,7 +32,6 @@ export default function Blog12() {
 
         <div className="next-blog-container">
           <Link to="/blogs/11" className="next-blog-btn">Previous Blog</Link>
-          <Link to="/blogs/reflections" className="next-blog-btn">Next Blog</Link>
         </div>
     </>
   );

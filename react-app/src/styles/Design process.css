@@ -173,6 +173,11 @@ nav ul li a:hover {
   position: relative;
 }
 
+.style-guide-img {
+  max-width: 28rem;
+  display: block;
+}
+
 .inspiration-block img:hover {
   transform: rotate(0deg) scale(1.03);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);

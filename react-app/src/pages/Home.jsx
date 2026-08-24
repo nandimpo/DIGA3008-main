@@ -45,7 +45,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <p className="story-intro-aside" aria-hidden="true">
+          <Link className="story-intro-aside" to="/design">
             <svg className="story-intro-aside-arrow" viewBox="0 0 90 60" aria-hidden="true">
               <defs>
                 <marker id="arrowhead-aside" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
@@ -54,8 +54,8 @@ export default function Home() {
               </defs>
               <path d="M8,10 C 30,15 50,35 78,50" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" markerEnd="url(#arrowhead-aside)" />
             </svg>
-            <span>What do you think?</span>
-          </p>
+            <span>Get a sneak peek into my design journal</span>
+          </Link>
         </div>
       </section>
 

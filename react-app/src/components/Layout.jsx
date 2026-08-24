@@ -3,11 +3,14 @@ import { Outlet, useLocation } from 'react-router-dom';
 import CursorPulse from './CursorPulse';
 import Nav from './Nav';
 import Footer from './Footer';
+import Lightbox from './Lightbox';
 import useScrollReveal from '../hooks/useScrollReveal';
 import useTypewriter from '../hooks/useTypewriter';
+import useLightbox from '../hooks/useLightbox';
 
 export default function Layout() {
   const { pathname } = useLocation();
+  const lightbox = useLightbox();
 
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
@@ -16,7 +19,9 @@ export default function Layout() {
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [pathname]);
 
   useScrollReveal(pathname);
@@ -30,6 +35,7 @@ export default function Layout() {
         <Outlet />
       </div>
       <Footer />
+      <Lightbox {...lightbox} />
     </>
   );
 }

@@ -2,6 +2,11 @@ import { useEffect } from 'react';
 
 const SELECTOR = 'h1, h2, h3, .project-detail-eyebrow';
 
+// Survives React StrictMode's dev-only setup -> cleanup -> setup double-invoke,
+// which otherwise clears an element's text on the first pass and leaves nothing
+// to type on the second, so the heading renders permanently blank.
+const originalContentCache = new WeakMap();
+
 function buildTypingPlan(sourceNode, targetParent, plan) {
   Array.from(sourceNode.childNodes).forEach((child) => {
     if (child.nodeType === Node.TEXT_NODE) {
@@ -36,9 +41,13 @@ export default function useTypewriter(dependency) {
     const plans = new Map();
 
     targets.forEach((el) => {
-      const source = el.cloneNode(true);
+      let source = originalContentCache.get(el);
+      if (!source) {
+        source = el.cloneNode(true);
+        originalContentCache.set(el, source);
+      }
       const plan = [];
-      buildTypingPlan(source, el, plan);
+      buildTypingPlan(source.cloneNode(true), el, plan);
       el.textContent = '';
       plans.set(el, plan);
       el.classList.add('typewriter-pending');

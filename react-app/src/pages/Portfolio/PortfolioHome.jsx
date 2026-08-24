@@ -37,27 +37,23 @@ export default function PortfolioHome() {
         </div>
 
         <section className="project-row-section" id="portfolio-skills">
-          <div className="skill-block-inner">
-            <h2 className="skill-block-heading">Skills</h2>
-            <div className="skill-tags">
-              <span className="skill-tag"><i className="fa-brands fa-adobe" aria-hidden="true"></i> Adobe Creative Cloud</span>
-              <span className="skill-tag"><i className="fa-brands fa-microsoft" aria-hidden="true"></i> Microsoft Office</span>
-              <span className="skill-tag"><i className="fa-solid fa-cube" aria-hidden="true"></i> Unity</span>
-              <span className="skill-tag"><i className="fa-solid fa-palette" aria-hidden="true"></i> Canva</span>
-              <span className="skill-tag"><i className="fa-solid fa-cubes" aria-hidden="true"></i> Blender</span>
-              <span className="skill-tag"><i className="fa-solid fa-code" aria-hidden="true"></i> Coding (C# / CSS / HTML / JavaScript)</span>
-            </div>
+          <h2 className="project-row-heading">Skills</h2>
+          <div className="skill-grid">
+            <span className="skill-tag"><i className="fa-brands fa-adobe" aria-hidden="true"></i> Adobe Creative Cloud</span>
+            <span className="skill-tag"><i className="fa-brands fa-microsoft" aria-hidden="true"></i> Microsoft Office</span>
+            <span className="skill-tag"><i className="fa-solid fa-cube" aria-hidden="true"></i> Unity</span>
+            <span className="skill-tag"><i className="fa-solid fa-palette" aria-hidden="true"></i> Canva</span>
+            <span className="skill-tag"><i className="fa-solid fa-cubes" aria-hidden="true"></i> Blender</span>
+            <span className="skill-tag"><i className="fa-solid fa-code" aria-hidden="true"></i> Coding (C# / CSS / HTML / JavaScript)</span>
           </div>
         </section>
 
         <section className="project-row-section" id="portfolio-languages">
-          <div className="skill-block-inner">
-            <h2 className="skill-block-heading">Languages</h2>
-            <div className="skill-tags">
-              <span className="skill-tag"><i className="fa-solid fa-language" aria-hidden="true"></i> English</span>
-              <span className="skill-tag"><i className="fa-solid fa-language" aria-hidden="true"></i> French</span>
-              <span className="skill-tag"><i className="fa-solid fa-language" aria-hidden="true"></i> IsiZulu</span>
-            </div>
+          <h2 className="project-row-heading">Languages</h2>
+          <div className="skill-grid">
+            <span className="skill-tag"><i className="fa-solid fa-language" aria-hidden="true"></i> English</span>
+            <span className="skill-tag"><i className="fa-solid fa-language" aria-hidden="true"></i> French</span>
+            <span className="skill-tag"><i className="fa-solid fa-language" aria-hidden="true"></i> IsiZulu</span>
           </div>
         </section>
 

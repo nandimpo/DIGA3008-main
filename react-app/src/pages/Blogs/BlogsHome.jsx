@@ -29,13 +29,6 @@ export default function BlogsHome() {
         <div className="blog-container">
           <div className="blog-grid">
             <div className="blog-post">
-              <img src="/Images/Blogshome/Reflections.jpg" alt="Reflections for Blogs" />
-              <div className="blog-post-content">
-                <h3 className="blog-post-title"><span className="blog-number">Reflections</span></h3>
-                <Link to="/blogs/reflections" className="blog-post-button">Read More</Link>
-              </div>
-            </div>
-            <div className="blog-post">
               <img src="/Images/Blogs/Blog 12.jpg" alt="Blog 12" />
               <div className="blog-post-content">
                 <h3 className="blog-post-title"><span className="blog-number">Blog 12</span>: Close reading of 'Internet Access is a Fundamental Right...' by Spyros Kasapis.</h3>

@@ -27,7 +27,6 @@ import Blog9 from './pages/Blogs/Blog9';
 import Blog10 from './pages/Blogs/Blog10';
 import Blog11 from './pages/Blogs/Blog11';
 import Blog12 from './pages/Blogs/Blog12';
-import Reflections from './pages/Blogs/Reflections';
 
 import DesignHome from './pages/Design/DesignHome';
 import Wireframes from './pages/Design/Wireframes';
@@ -69,7 +68,6 @@ export default function App() {
         <Route path="/blogs/10" element={<Blog10 />} />
         <Route path="/blogs/11" element={<Blog11 />} />
         <Route path="/blogs/12" element={<Blog12 />} />
-        <Route path="/blogs/reflections" element={<Reflections />} />
 
         <Route path="/design" element={<DesignHome />} />
         <Route path="/design/wireframes" element={<Wireframes />} />

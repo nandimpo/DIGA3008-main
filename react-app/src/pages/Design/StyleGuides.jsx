@@ -21,24 +21,36 @@ export default function StyleGuides() {
         <main className="design-content">
           <section className="inspiration-block">
             <h3>Initial Style Guide</h3>
-            <img src="/Images/Style Guide.jpg" alt="Initial style guide with blue and grey" />
+            <img className="style-guide-img" src="/Images/Style Guide.jpg" alt="Initial style guide with blue and grey" />
             <p className="p-summary">
-              I felt that the blue was too bright and the grey too dark, leading to imbalance in tone. It made everything feel colder than I wanted, and it didn’t reflect my design values. 
+              I felt that the blue was too bright and the grey too dark, leading to imbalance in tone. It made everything feel colder than I wanted, and it didn’t reflect my design values.
               I wanted something warmer and softer, something that felt more personal. Looking at the original palette, I realized I had been designing based on what I thought users *expected* rather than what I wanted to express.
             </p>
           </section>
 
           <section className="inspiration-block">
             <h3>Final Style Guide</h3>
-            <img src="/Images/Blogs/style guide (correct).png" alt="Final style guide with balanced colors" />
+            <img className="style-guide-img" src="/Images/Blogs/style guide (correct).png" alt="Final style guide with balanced colors" />
             <p className="p-summary">
-              I added white to create more breathing space and let the other colours shine. The green was added to complement the orange, bringing calmness to the warmth. 
-              This version feels way more balanced and human. It has energy without being overwhelming, and it feels grounded. I can see myself using this across all my pages with confidence. 
+              I added white to create more breathing space and let the other colours shine. The green was added to complement the orange, bringing calmness to the warmth.
+              This version feels way more balanced and human. It has energy without being overwhelming, and it feels grounded. I can see myself using this across all my pages with confidence.
               The biggest shift was realizing that my colour choices could reflect *me*, not just aesthetic trends.
             </p>
           </section>
 
-         
+          <section className="inspiration-block">
+            <h2>Case Study Style Guides</h2>
+            <p className="p-summary">
+              The same exercise, repeated for client work: a quick style guide for each project before any screens
+              got built, so every decision about colour, type, and tone had somewhere to be checked against.
+            </p>
+            <div className="wireframe-gallery">
+              <img src="/Images/Portfolio/Absa next gen/Absa next Gen Style guide.png" alt="ABSA NextGen brand style guide" />
+              <img src="/Images/DesignProcess/Assignment 1 - Design Document/14.png" alt="Rock Creative Agency design guidelines and style guide" />
+              <img src="/Images/DesignProcess/_Visual Design Document (VDD)/6.png" alt="I'Styla Senkosi visual direction and colour palette" />
+            </div>
+          </section>
+
           <div className="button-container">
             <Link to="/design/inspiration" className="nav-button">← Design Inspiration</Link>
           </div>
