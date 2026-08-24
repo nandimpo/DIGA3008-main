@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Blogs.css';
-import useGradientBackground from '../../hooks/useGradientBackground';
+import usePaperBackground from '../../hooks/usePaperBackground';
 
 export default function Blog10() {
-  useGradientBackground();
+  usePaperBackground();
 
   return (
     <>
       <article className="blog-article-wrapper h-entry">
           <div className="e-content">
-            <h1 className="p-name">Blog 10 - How I incorporated JavaScript into my website</h1>
+            <h1 className="p-name">Blog 10: How I incorporated JavaScript into my website</h1>
             <p className="blog-date dt-published" datetime="2025-05-12">12 May 2025</p>
 
             <p className="topic-label"><strong>Topic:</strong> When thinking about how our code matters in the context of decolonialism, can you identify any things in your own coding practice that you should be aware of?</p>
@@ -28,8 +28,8 @@ export default function Blog10() {
 
             <h3>References</h3>
             <ul>
-              <li>Birhane, A. (2020) 'Algorithmic Colonization of Africa', Script-ed, 17(2), pp. 389–409. DOI: 10.2966/scrip.170220.389.</li>
-              <li>Smith, J.A. (2023) 'The evolution of referencing styles', Journal of Academic Writing, 15(2), pp. 123–145.</li>
+              <li>Birhane, A. (2020) 'Algorithmic Colonization of Africa', Script-ed, 17(2), pp. 389-409. DOI: 10.2966/scrip.170220.389.</li>
+              <li>Smith, J.A. (2023) 'The evolution of referencing styles', Journal of Academic Writing, 15(2), pp. 123-145.</li>
               <li>Magenya, S. (2020) 'Making a Feminist Internet in Africa: Why the internet needs African Feminists and Feminisms | GenderIT.org', GenderIT.org, 17 March. Available at: https://www.genderit.org/editorial/making-feminist-internet-africa-why-internet-needs-african-feminists-and-feminisms.</li>
               <li>Sarr, L. (2023) 'Expert says Catholic Church in Africa is growing in numbers, but not necessarily in witness', 21 May.</li>
             </ul>

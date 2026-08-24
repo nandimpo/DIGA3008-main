@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Blogs.css';
-import useGradientBackground from '../../hooks/useGradientBackground';
+import usePaperBackground from '../../hooks/usePaperBackground';
 
 export default function Blog7() {
-  useGradientBackground();
+  usePaperBackground();
 
   return (
     <>
       <article className="blog-article-wrapper h-entry">
           <div className="e-content">
-            <h1 className="p-name">Blog 7 - UX & UI Analysis of Ehomeaffairs</h1>
+            <h1 className="p-name">Blog 7: UX & UI Analysis of Ehomeaffairs</h1>
             <p className="blog-date dt-published" datetime="2025-03-31">31 March 2025</p>
 
             <p className="topic-label"><strong>Topic:</strong> UX and UI Analysis of the Ehomeaffairs and AFA websites</p>
@@ -26,7 +26,7 @@ export default function Blog7() {
             <h3>Cons:</h3>
             <ul>
               <li>User controls are not intuitive. For example, entering OTPs often fails without proper feedback.</li>
-              <li>The site is unreliable—critical features like OTP requests are inconsistent and often non-functional.</li>
+              <li>The site is unreliable, critical features like OTP requests are inconsistent and often non-functional.</li>
             </ul>
 
             <img src="/Images/Blogs/Afa website.png" alt="AFA website screenshot" width="500" height="300" />
@@ -40,7 +40,7 @@ export default function Blog7() {
 
             <h3>Cons:</h3>
             <ul>
-              <li>The homepage lacks context—nowhere does it clearly explain what "AFA" stands for.</li>
+              <li>The homepage lacks context, nowhere does it clearly explain what "AFA" stands for.</li>
               <li>The site is visually overwhelming due to excessive animations that compete for attention.</li>
             </ul>
           </div>

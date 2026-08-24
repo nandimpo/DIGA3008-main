@@ -20,7 +20,7 @@ export default function Animation() {
             <div className="project-row-list">
               <Link className="project-row" to="/portfolio/animation/homer-evolution">
                 <span className="project-row-body">
-                  <span className="project-row-title">Homer Simpson — An Animation Evolution</span>
+                  <span className="project-row-title">Homer Simpson, An Animation Evolution</span>
                   <span className="project-row-hook">Three studies tracing one character from a blinking loop to a full walk cycle to weighted object interaction.</span>
                 </span>
                 <span className="project-row-arrow" aria-hidden="true">→</span>

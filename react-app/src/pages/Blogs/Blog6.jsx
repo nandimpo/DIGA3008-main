@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Blogs.css';
-import useGradientBackground from '../../hooks/useGradientBackground';
+import usePaperBackground from '../../hooks/usePaperBackground';
 
 export default function Blog6() {
-  useGradientBackground();
+  usePaperBackground();
 
   return (
     <>
       <article className="blog-article-wrapper h-entry">
           <div className="e-content">
-            <h1 className="p-name">Blog 6 - Research for the Design Section of my website</h1>
+            <h1 className="p-name">Blog 6: Research for the Design Section of my website</h1>
             <p className="blog-date dt-published" datetime="2025-03-24">24 March 2025</p>
 
             <p className="topic-label"><strong>Topic:</strong> Design Sections</p>
@@ -25,7 +25,7 @@ export default function Blog6() {
               I want my website to have a strong typographic hierarchy. I’ll use headings to organize information and guide the user’s focus. I selected the font 'Grown' for headings for its legibility and soft curves that reflect a feminine feel. For body text, I chose 'Montserrat Classic' for its clean readability.
             </p>
 
-            <h3>Fonts - Readability and Legibility:</h3>
+            <h3>Fonts: Readability and Legibility:</h3>
             <img src="/Images/Blogs/Fonts.png" alt="Fonts Example" width="500" height="150" />
             <p className="p-summary">
               I will use a limited but expressive color palette. I chose brown to embrace my identity as a Black African woman, paired with warm yellows and oranges to evoke comfort. Cooler accent colors are added to create balance and emphasis.
@@ -47,7 +47,7 @@ export default function Blog6() {
             <img src="/Images/Blogs/final design sketch 4.png" width="200" height="200" />
             <img src="/Images/Blogs/final design sketch 5.png" width="200" height="200" />
 
-            <h3>Wireframes - Content Mapping:</h3>
+            <h3>Wireframes: Content Mapping:</h3>
             <img src="/Images/Blogs/Mapping-Sites Content.png" alt="Content Mapping" width="500" height="300" />
             <img src="/Images/Blogs/Mapping- Experience.png" alt="Experience Mapping" width="500" height="300" />
 

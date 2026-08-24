@@ -10,7 +10,7 @@ export default function StyleProcessDocumentation() {
       <header className="design-header">
           <div className="header-text-group">
             <h1>Style Process Documentation</h1>
-            <p>My stylistic design decisions—from fonts to layout—documented through visual and strategic exploration. I wanted to make sure every visual choice helped communicate who I am and what I value in interaction design.</p>
+            <p>My stylistic design decisions, from fonts to layout, documented through visual and strategic exploration. I wanted to make sure every visual choice helped communicate who I am and what I value in interaction design.</p>
           </div>
         </header>
 
@@ -19,7 +19,7 @@ export default function StyleProcessDocumentation() {
           <section className="inspiration-block">
             <h3>Goal Alignment</h3>
             <p className="p-summary">
-              The goal of my website is to express who I am as a designer. I want it to be clear, accessible, and warm. I’m not just showcasing work—I’m building an environment where someone can get a feel for my perspective. Every decision, from type to tone, is part of telling that story.
+              The goal of my website is to express who I am as a designer. I want it to be clear, accessible, and warm. I’m not just showcasing work, I’m building an environment where someone can get a feel for my perspective. Every decision, from type to tone, is part of telling that story.
             </p>
           </section>
 
@@ -29,7 +29,7 @@ export default function StyleProcessDocumentation() {
           </section>
 
           <section className="inspiration-block">
-            <h3>User Flow – Screens, Behaviour, and Decisions</h3>
+            <h3>User Flow: Screens, Behaviour, and Decisions</h3>
             <img src="/Images/Blogs/Mapping- Experience.png" alt="User Flow Diagram" />
           </section>
 
@@ -48,21 +48,21 @@ export default function StyleProcessDocumentation() {
           </section>
 
           <section className="inspiration-block">
-            <h3>Fonts – Readability and Legibility</h3>
+            <h3>Fonts: Readability and Legibility</h3>
             <img src="/Images/Blogs/Fonts.png" alt="Font Samples" />
             <p className="p-summary">
-              ‘Grown’ is used for headings to add personality, and ‘Montserrat Classic’ for body text due to its readability. Together, they allow contrast between character and clarity. I wanted headings that felt expressive but not overwhelming, and body text that would hold up across long paragraphs and mobile views. The font pairing feels modern but personal—exactly what I needed.
+              ‘Grown’ is used for headings to add personality, and ‘Montserrat Classic’ for body text due to its readability. Together, they allow contrast between character and clarity. I wanted headings that felt expressive but not overwhelming, and body text that would hold up across long paragraphs and mobile views. The font pairing feels modern but personal, exactly what I needed.
             </p>
           </section>
 
           <section className="inspiration-block">
-            <h3>Colours – Theory and Application</h3>
+            <h3>Colours: Theory and Application</h3>
             <img src="/Images/Blogs/Colour palette.png" alt="Full Colour Palette" />
 
             <h4>Primary Colour Palette</h4>
             <img src="/Images/Blogs/Colour palette 1.png" alt="Primary Colour Palette" />
             <p className="p-summary">
-              I chose warm, analogous colors (yellow, orange) for harmony and unity. These shades set the tone for the entire site—they feel energizing but soft. I wanted the site to feel like morning light—inviting and optimistic, not sterile or cold.
+              I chose warm, analogous colors (yellow, orange) for harmony and unity. These shades set the tone for the entire site, they feel energizing but soft. I wanted the site to feel like morning light, inviting and optimistic, not sterile or cold.
             </p>
 
             <h4>Secondary Colour Palette</h4>
@@ -73,7 +73,7 @@ export default function StyleProcessDocumentation() {
           </section>
 
           <section className="inspiration-block">
-            <h3>Composition – Hierarchy, Balance, Harmony</h3>
+            <h3>Composition: Hierarchy, Balance, Harmony</h3>
             <p className="p-summary">
               The site is symmetrically laid out and center-aligned. Circular motifs and rotational repetition support visual harmony. I used grids to guide my layouts, but I was flexible enough to break them when needed for visual rhythm. It was a balancing act between precision and personality.
             </p>
@@ -96,14 +96,14 @@ export default function StyleProcessDocumentation() {
             <ul>
               <li>
                 <strong>Website:</strong>
-                <a href="https://dribbble.com/shots/12108232--l-gante-home-hero-slider" target="_blank">Dribbble – Hero Slider Example</a><br />
+                <a href="https://dribbble.com/shots/12108232--l-gante-home-hero-slider" target="_blank">Dribbble: Hero Slider Example</a><br />
                 <span className="p-summary">
                   I admire the use of circular shapes to create a soft, welcoming atmosphere. The layout felt intuitive and organic, which is what I wanted for my own site. It showed me that UX can feel natural and calming without losing clarity.
                 </span>
               </li>
               <li>
                 <strong>Website:</strong>
-                <a href="https://pixcap.com/blog/warm-color-palette" target="_blank">Pixcap – Warm Colour Theory</a><br />
+                <a href="https://pixcap.com/blog/warm-color-palette" target="_blank">Pixcap: Warm Colour Theory</a><br />
                 <span className="p-summary">
                   This helped me choose my palette. Warm colors evoke excitement and are effective in user engagement and brand identity. It gave me the confidence to lean into oranges and yellows, even though they’re not often used in minimal web design.
                 </span>

@@ -1,21 +1,21 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Blogs.css';
-import useGradientBackground from '../../hooks/useGradientBackground';
+import usePaperBackground from '../../hooks/usePaperBackground';
 
 export default function Blog4() {
-  useGradientBackground();
+  usePaperBackground();
 
   return (
     <>
       <article className="blog-article-wrapper h-entry">
           <div className="e-content">
-            <h1 className="p-name">Blog 4 - Continued Development of Website Strategy</h1>
+            <h1 className="p-name">Blog 4: Continued Development of Website Strategy</h1>
             <p className="blog-date dt-published" datetime="2025-03-10">10 March 2025</p>
 
             <p className="topic-label"><strong>Topic:</strong> Reflection on Readings and Continued Development of Site Strategy</p>
 
             <h3>User Inclusivity:</h3>
-            <p className="p-summary">Inclusive design requires empathy and anticipation of user needs. As I work through the course, I’m learning to frame design decisions from multiple perspectives—including those of users who might face accessibility barriers or cultural dissonance.</p>
+            <p className="p-summary">Inclusive design requires empathy and anticipation of user needs. As I work through the course, I’m learning to frame design decisions from multiple perspectives, including those of users who might face accessibility barriers or cultural dissonance.</p>
 
             <h3>Wireframe Refinement:</h3>
             <p className="p-summary">I’ve updated my homepage wireframe to make it more intuitive, reducing visual clutter and reordering content for clarity. Button placement and page flow were changed based on peer feedback and testing on mobile devices.</p>

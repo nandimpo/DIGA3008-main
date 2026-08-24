@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Blogs.css';
-import useGradientBackground from '../../hooks/useGradientBackground';
+import usePaperBackground from '../../hooks/usePaperBackground';
 
 export default function Reflections() {
-  useGradientBackground();
+  usePaperBackground();
 
   return (
     <>
@@ -16,13 +16,13 @@ export default function Reflections() {
 
             <p className="p-summary">After implementing my CSS, I wasn't too happy with my design...</p>
 
-            <ul><li>Art4web – <a href="https://ss.art4web.co/" target="_blank">https://ss.art4web.co/</a></li></ul>
+            <ul><li>Art4web: <a href="https://ss.art4web.co/" target="_blank">https://ss.art4web.co/</a></li></ul>
 
             <img src="/Images/Blogs/Reflections 1.png" alt="Website Inspiration" width="500" height="300" />
 
             <p className="p-summary">On the website above, I liked that brown was a central color...</p>
 
-            <p className="p-summary">I also didn't like my homepage—everything felt very out of place...</p>
+            <p className="p-summary">I also didn't like my homepage, everything felt very out of place...</p>
 
             <img src="/Images/Blogs/Reflections 2.png" alt="New wireframe sketch" width="500" height="300" />
             <p className="p-summary">Idea for homepage layout.</p>

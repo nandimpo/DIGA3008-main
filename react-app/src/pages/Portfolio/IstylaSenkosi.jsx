@@ -43,15 +43,15 @@ export default function IstylaSenkosi() {
           <div className="project-detail-gallery">
             <figure className="project-detail-frame">
               <img src="/Images/Portfolio/Istyla Senkosi/2.png" alt="I'Styla Senkosi chapters menu" />
-              <figcaption>Chapters — Swenka, Pantsula, Skhothane, Reflection</figcaption>
+              <figcaption>Chapters: Swenka, Pantsula, Skhothane, Reflection</figcaption>
             </figure>
             <figure className="project-detail-frame">
               <img src="/Images/Portfolio/Istyla Senkosi/5.png" alt="I'Styla Senkosi Swenka chapter" />
-              <figcaption>Chapter 01 — Swenka</figcaption>
+              <figcaption>Chapter 01: Swenka</figcaption>
             </figure>
             <figure className="project-detail-frame">
               <img src="/Images/Portfolio/Istyla Senkosi/9.png" alt="I'Styla Senkosi editorial archive" />
-              <figcaption>Editorial Archive — visual reference</figcaption>
+              <figcaption>Editorial Archive: visual reference</figcaption>
             </figure>
             <figure className="project-detail-frame">
               <img src="/Images/Portfolio/Istyla Senkosi/12.png" alt="I'Styla Senkosi additional screen" />
@@ -65,14 +65,14 @@ export default function IstylaSenkosi() {
             </figure>
             <figure className="project-detail-frame">
               <img src="/Images/Portfolio/Istyla Senkosi/_Pitch Deck for Istyla Senkosi/1.png" alt="I'Styla Senkosi pitch deck cover" />
-              <figcaption>Pitch deck cover — Past, Present and Future of Township Fashion</figcaption>
+              <figcaption>Pitch deck cover: Past, Present and Future of Township Fashion</figcaption>
             </figure>
           </div>
 
           <div className="project-detail-process">
             <h2 className="project-detail-process-heading">From My Design Journal</h2>
             <p className="project-detail-process-note">
-              A page from the visual design document — the mood board and chapter breakdown that shaped
+              A page from the visual design document, the mood board and chapter breakdown that shaped
               the documentary's colour, rhythm, and pacing long before it was interactive.
             </p>
             <div className="process-scroll">
@@ -82,11 +82,11 @@ export default function IstylaSenkosi() {
               </figure>
               <figure className="process-page">
                 <img src="/Images/DesignProcess/_Visual Design Document (VDD)/6.png" alt="I'Styla Senkosi visual direction mood board" />
-                <figcaption>Visual direction — mood board &amp; palette</figcaption>
+                <figcaption>Visual direction: mood board &amp; palette</figcaption>
               </figure>
               <figure className="process-page">
                 <img src="/Images/DesignProcess/_Visual Design Document (VDD)/9.png" alt="I'Styla Senkosi chapter breakdown" />
-                <figcaption>Chapter breakdown — Pantsula &amp; Skhothane</figcaption>
+                <figcaption>Chapter breakdown: Pantsula &amp; Skhothane</figcaption>
               </figure>
             </div>
           </div>

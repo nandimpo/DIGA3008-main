@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Blogs.css';
-import useGradientBackground from '../../hooks/useGradientBackground';
+import usePaperBackground from '../../hooks/usePaperBackground';
 
 export default function Blog2() {
-  useGradientBackground();
+  usePaperBackground();
 
   return (
     <>
       <article className="blog-article-wrapper h-entry">
           <div className="e-content">
             
-            <h1 className="p-name">Blog 2 - Reflection on 'You Say You Want a Revolution? Hypertext and the Laws of Media'</h1>
+            <h1 className="p-name">Blog 2: Reflection on 'You Say You Want a Revolution? Hypertext and the Laws of Media'</h1>
             <p className="blog-date dt-published" datetime="2025-02-24">24 February 2025</p>
 
             

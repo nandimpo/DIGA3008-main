@@ -12,8 +12,8 @@ export default function ThreeDWalkCycle() {
           <p className="project-detail-eyebrow">Animation</p>
           <h1 className="project-detail-title"><span className="glyph-fallback">3</span>D Walk Cycle</h1>
           <p className="project-detail-summary">
-            A character walk cycle built to explore the core principles of animation — timing, exaggeration,
-            and anticipation — through a single repeating motion.
+            A character walk cycle built to explore the core principles of animation, timing, exaggeration,
+            and anticipation, through a single repeating motion.
           </p>
 
           <img className="project-detail-hero" src="/Images/Portfolio/Walk cycle.gif" alt="Character walk cycle animation" />
@@ -22,7 +22,7 @@ export default function ThreeDWalkCycle() {
             <div className="project-detail-story">
               <h2>Long story short</h2>
               <p>
-                This walk cycle was built as a focused study rather than a narrative piece — the goal was to
+                This walk cycle was built as a focused study rather than a narrative piece, the goal was to
                 get the fundamentals right. Every pose was pushed slightly further than natural movement would
                 allow, using exaggeration to keep the motion readable and anticipation to give each step
                 weight before it lands.
@@ -40,10 +40,19 @@ export default function ThreeDWalkCycle() {
             </div>
           </div>
 
-          <p className="project-detail-note">
-            More process shots coming soon — pose breakdowns, timing charts, or reference footage would make
-            a great addition here.
-          </p>
+          <div className="project-detail-process">
+            <h2 className="project-detail-process-heading">From My Design Journal</h2>
+            <p className="project-detail-process-note">
+              The keyframe breakdown I referenced while blocking out the cycle, contact, down, passing, and up
+              positions mapped against the frame count.
+            </p>
+            <div className="process-scroll">
+              <figure className="process-page">
+                <img src="/Images/Portfolio/Animation/Walk with character/image-1.png" alt="Classic walk cycle keyframe breakdown diagram" />
+                <figcaption>Reference: classic walk-cycle keyframe breakdown</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </main>
 

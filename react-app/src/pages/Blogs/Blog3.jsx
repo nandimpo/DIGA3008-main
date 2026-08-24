@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Blogs.css';
-import useGradientBackground from '../../hooks/useGradientBackground';
+import usePaperBackground from '../../hooks/usePaperBackground';
 
 export default function Blog3() {
-  useGradientBackground();
+  usePaperBackground();
 
   return (
     <>
       <article className="h-entry">
           <div className="blog-article-wrapper e-content">
-            <h1 className="p-name">Blog 3 - Defining and discussing my user alignment, mapping out my site's content, experience, and interface elements.</h1>
+            <h1 className="p-name">Blog 3: Defining and discussing my user alignment, mapping out my site's content, experience, and interface elements.</h1>
             <p className="blog-date dt-published" datetime="2025-03-03">3 March 2025</p>
 
            <p className="topic-label"><strong>Topic:</strong> Working through the slides for Interaction Design for the Web, define and discuss your user alignment, and map out your site's content, experience, and interface elements.</p>
@@ -23,11 +23,11 @@ export default function Blog3() {
             <img src="/Images/Blogs/Mapping-Sites Content.png" alt="Wireframe-Images" width="500" height="300" />
             <p>The content of my website showcases the different skills I have and the areas I’ve explored throughout this course. The website is made up of five main content sections:</p>
             <ul>
-              <li>Blog posts - showcases my understanding of the web and internet.</li>
-              <li>Design - showcases my design process clearly and effectively.</li>
-              <li>Scripts - showcases my ability to understand the functionality of the web.</li>
-              <li>Image - showcases my aesthetic choices.</li>
-              <li>Portfolio - showcases my additional skills and extracurricular work.</li>
+              <li>Blog posts: showcases my understanding of the web and internet.</li>
+              <li>Design: showcases my design process clearly and effectively.</li>
+              <li>Scripts: showcases my ability to understand the functionality of the web.</li>
+              <li>Image: showcases my aesthetic choices.</li>
+              <li>Portfolio: showcases my additional skills and extracurricular work.</li>
             </ul>
 
             <h3>Experience</h3>

@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Blogs.css';
-import useGradientBackground from '../../hooks/useGradientBackground';
+import usePaperBackground from '../../hooks/usePaperBackground';
 
 export default function Blog11() {
-  useGradientBackground();
+  usePaperBackground();
 
   return (
     <>
       <article className="blog-article-wrapper h-entry">
           <div className="e-content">
-            <h1 className="p-name">Blog 11 - What does an ethical internet look like to me?</h1>
+            <h1 className="p-name">Blog 11: What does an ethical internet look like to me?</h1>
             <p className="blog-date dt-published" datetime="2025-05-19">19 May 2025</p>
 
             <p className="topic-label"><strong>Topic:</strong> What does an ethical internet look like to you?</p>
@@ -32,7 +32,7 @@ export default function Blog11() {
 
             <h3>References</h3>
             <ul>
-              <li>Orgad, S. (2007) 'The internet as a moral space: the legacy of Roger Silverstone', New Media & Society, 9(1), pp. 33–41. DOI: 10.1177/1461444807075202.</li>
+              <li>Orgad, S. (2007) 'The internet as a moral space: the legacy of Roger Silverstone', New Media & Society, 9(1), pp. 33-41. DOI: 10.1177/1461444807075202.</li>
               <li>Wang, Y-M., Lin, Y-C. & Wang, Y-S. (2025) 'Implement internet ethics education: What matters most?', Education and Information Technologies.</li>
             </ul>
           </div>

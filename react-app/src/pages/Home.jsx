@@ -64,18 +64,17 @@ export default function Home() {
           <div className="about-text">
             <h2>This is<br /><span>My Story</span></h2>
             <p className="story-beat">
-              I am a <strong>people to people designer</strong>. A logical creative — I use art, technology &amp; storytelling to try and make the world a better place. I just love to design.
+              I am a <strong>people to people designer</strong>. A logical creative, I use art, technology &amp; storytelling to try and make the world a better place. I just love to design.
             </p>
             <p className="story-beat">
-              I fell in love with design through storytelling—across illustration, animation, and interaction.
+              I fell in love with design through storytelling, across illustration, animation, and interaction.
             </p>
             <p className="story-beat">
               Working between Johannesburg and online creative spaces, I document stories through visuals, thoughtful interfaces, and words.
               I'm passionate about creating work that values empathy, accessibility, and community.
             </p>
             <p className="story-beat">
-              Whether coding interfaces, designing animations, or writing essays, I aim to bridge art and tech with purpose—
-              and I'm increasingly drawn toward <strong>immersive experience design</strong>, building the kind of interactive,
+              Whether coding interfaces, designing animations, or writing essays, I aim to bridge art and tech with purpose, and I'm increasingly drawn toward <strong>immersive experience design</strong>, building the kind of interactive,
               story-driven work you're scrolling through right now.
             </p>
           </div>
@@ -90,41 +89,41 @@ export default function Home() {
         <h2 className="case-studies-heading">Stories Behind the Work</h2>
 
         <div className="case-study-list">
-          <a className="case-study-row" href="https://nandimpo.github.io/Assignment-2/" target="_blank" rel="noopener noreferrer">
+          <Link className="case-study-row" to="/portfolio/design/absa-nextgen">
             <span className="case-study-number">01</span>
             <span className="case-study-body">
               <span className="case-study-title">ABSA NextGen Wealth Studio</span>
-              <span className="case-study-hook">Reframing wealth management as something a younger generation could actually want to open — a sleek, guided, human experience.</span>
+              <span className="case-study-hook">Reframing wealth management as something a younger generation could actually want to open, a sleek, guided, human experience.</span>
             </span>
             <span className="case-study-tags">
               <span className="case-study-tag">UX/UI</span>
               <span className="case-study-tag">Interaction Design</span>
             </span>
-          </a>
+          </Link>
 
-          <a className="case-study-row" href="https://nandimpo.github.io/istyla-senkosi/" target="_blank" rel="noopener noreferrer">
+          <Link className="case-study-row" to="/portfolio/design/istyla-senkosi">
             <span className="case-study-number">02</span>
             <span className="case-study-body">
               <span className="case-study-title">I'Styla Senkosi</span>
-              <span className="case-study-hook">An interactive documentary tracing township fashion's past, present &amp; future — where storytelling and interface design meet.</span>
+              <span className="case-study-hook">An interactive documentary tracing township fashion's past, present &amp; future, where storytelling and interface design meet.</span>
             </span>
             <span className="case-study-tags">
               <span className="case-study-tag">Storytelling</span>
               <span className="case-study-tag">Interactive Documentary</span>
             </span>
-          </a>
+          </Link>
 
-          <a className="case-study-row" href="https://nandimpo.github.io/Rock-Creative-Agency/" target="_blank" rel="noopener noreferrer">
+          <Link className="case-study-row" to="/portfolio/design/rock-creative-agency">
             <span className="case-study-number">03</span>
             <span className="case-study-body">
               <span className="case-study-title">Rock Creative Agency</span>
-              <span className="case-study-hook">A branding &amp; PR agency site built to feel as solid as the work it sells — bold type, confident motion, and a story worth trusting.</span>
+              <span className="case-study-hook">A branding &amp; PR agency site built to feel as solid as the work it sells, bold type, confident motion, and a story worth trusting.</span>
             </span>
             <span className="case-study-tags">
               <span className="case-study-tag">Branding</span>
               <span className="case-study-tag">Website Design</span>
             </span>
-          </a>
+          </Link>
         </div>
       </section>
 

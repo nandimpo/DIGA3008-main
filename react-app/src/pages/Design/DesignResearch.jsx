@@ -18,7 +18,7 @@ export default function DesignResearch() {
           <section className="inspiration-block">
             <h2>Documentation of Your IxD Process</h2>
             <p className="p-summary">
-              The goal of my website is for users to understand who I am as a designer. It should be clear, understandable, accessible, and warm. I didn’t just want it to feel functional—I wanted it to feel like me. That meant stripping things back, looking at each component individually, and asking if it matched the tone and purpose I had in mind.
+              The goal of my website is for users to understand who I am as a designer. It should be clear, understandable, accessible, and warm. I didn’t just want it to feel functional, I wanted it to feel like me. That meant stripping things back, looking at each component individually, and asking if it matched the tone and purpose I had in mind.
             </p>
           </section>
 
@@ -28,7 +28,7 @@ export default function DesignResearch() {
           </section>
 
           <section className="inspiration-block">
-            <h3>User Flow – Screens, Behaviour, and Decisions</h3>
+            <h3>User Flow: Screens, Behaviour, and Decisions</h3>
             <img src="/Images/DesignProcess/Userflow.jpeg" alt="Diagram of user flow" />
           </section>
 
@@ -49,21 +49,21 @@ export default function DesignResearch() {
           <section className="inspiration-block">
             <h3>Fonts</h3>
             <p>
-              I chose ‘Grown’ for headings because it adds personality and makes a statement without being too loud. It matches the slightly playful but grounded feeling I want. For body text, I went with ‘Montserrat Classic’—it’s clean, modern, and easy to read. Together, they balance each other out and give the design both character and clarity.
+              I chose ‘Grown’ for headings because it adds personality and makes a statement without being too loud. It matches the slightly playful but grounded feeling I want. For body text, I went with ‘Montserrat Classic’, it’s clean, modern, and easy to read. Together, they balance each other out and give the design both character and clarity.
             </p>
             <img src="/Images/DesignProcess/Fonts.png" alt="Possible fonts" />
           </section>
 
           <section className="inspiration-block">
-            <h3>Colours – Theory and Relationships</h3>
+            <h3>Colours: Theory and Relationships</h3>
             <p className="p-summary">
-              Overall Colour Palette – At first, I was unsure about using brown. It’s not a typical web colour, and I worried it might make the site feel dull. But after researching sites like Art4Web, I realized brown could feel warm, earthy, and rich if used well. That inspired me to lean into it more and refine the combinations to bring out the softness of yellows and oranges alongside deeper browns.
+              Overall Colour Palette: At first, I was unsure about using brown. It’s not a typical web colour, and I worried it might make the site feel dull. But after researching sites like Art4Web, I realized brown could feel warm, earthy, and rich if used well. That inspired me to lean into it more and refine the combinations to bring out the softness of yellows and oranges alongside deeper browns.
             </p>
 
             <h4>Primary Colour Palette</h4>
             <img src="/Images/DesignProcess/Colour palette 1.png" alt="Primary colour palette" />
             <p className="p-summary">
-              I chose warm colours (yellow, orange) because they are inviting and harmonious (analogous). I want the palette to feel like sunlight on paper—cozy, not loud. I still plan to refine the yellows so they don’t feel too harsh on white backgrounds.
+              I chose warm colours (yellow, orange) because they are inviting and harmonious (analogous). I want the palette to feel like sunlight on paper, cozy, not loud. I still plan to refine the yellows so they don’t feel too harsh on white backgrounds.
             </p>
 
             <h4>Secondary Colour Palette</h4>
@@ -74,16 +74,16 @@ export default function DesignResearch() {
           </section>
 
           <section className="inspiration-block">
-            <h3>Composition – Hierarchy, Balance, Harmony</h3>
+            <h3>Composition: Hierarchy, Balance, Harmony</h3>
             <p className="p-summary">
               The layout is center-aligned and symmetrical for harmony. Repeated circular elements reflect my design goals. I want users to feel guided as they scroll, like the design is holding their hand rather than overwhelming them. But I might need to adjust spacing and sizing more because parts still feel a bit floaty.
             </p>
           </section>
 
           <section className="inspiration-block">
-            <h4>Interface Elements – Shape, Colour, Position</h4>
+            <h4>Interface Elements: Shape, Colour, Position</h4>
             <p className="p-summary">
-              I use circular, rounded shapes to maintain a warm and welcoming vibe. I noticed that when everything had sharp edges, the tone shifted into something too corporate. Rounded buttons and containers brought it back into something friendlier—more me.
+              I use circular, rounded shapes to maintain a warm and welcoming vibe. I noticed that when everything had sharp edges, the tone shifted into something too corporate. Rounded buttons and containers brought it back into something friendlier, more me.
             </p>
             <div className="wireframe-gallery">
               <img src="/Images/DesignProcess/Button 1.png" alt="Button 1" />
@@ -96,12 +96,12 @@ export default function DesignResearch() {
           <section className="inspiration-block">
             <h3>Reference Material</h3>
             <p className="p-summary">
-              I appreciate circular designs that promote comfort and calmness. I looked at sites with soft borders, organic shapes, and friendly typography. They made me realize that usability doesn't have to be cold or neutral—it can feel expressive too.
+              I appreciate circular designs that promote comfort and calmness. I looked at sites with soft borders, organic shapes, and friendly typography. They made me realize that usability doesn't have to be cold or neutral, it can feel expressive too.
             </p>
 
             <ul>
-              <li><a href="https://dribbble.com/shots/12108232--l-gante-home-hero-slider" target="_blank" className="p-name u-url">Inspiration – Dribbble</a></li>
-              <li><a href="https://pixcap.com/blog/warm-color-palette" target="_blank" className="p-name u-url">Inspiration – Pixcap</a></li>
+              <li><a href="https://dribbble.com/shots/12108232--l-gante-home-hero-slider" target="_blank" className="p-name u-url">Inspiration: Dribbble</a></li>
+              <li><a href="https://pixcap.com/blog/warm-color-palette" target="_blank" className="p-name u-url">Inspiration: Pixcap</a></li>
             </ul>
 
             <p className="p-summary">
@@ -113,6 +113,20 @@ export default function DesignResearch() {
               <li>They make users feel welcome and linger longer.</li>
               <li>They support a friendly, energetic brand identity.</li>
             </ul>
+          </section>
+
+          <section className="inspiration-block">
+            <h2>Case Study Research &amp; Documents</h2>
+            <p className="p-summary">
+              The same research habits carried into client work, user personas, mood boards, and full design
+              documents written up for Rock Creative Agency and I'Styla Senkosi before either site was built.
+            </p>
+            <div className="wireframe-gallery">
+              <img src="/Images/DesignProcess/Assignment 1 - Design Document/1.png" alt="Rock Creative Agency design document cover" />
+              <img src="/Images/DesignProcess/Assignment 1 - Design Document/10.png" alt="Rock Creative Agency user research persona" />
+              <img src="/Images/DesignProcess/_Visual Design Document (VDD)/1.png" alt="I'Styla Senkosi visual design document cover" />
+              <img src="/Images/DesignProcess/_Visual Design Document (VDD)/4.png" alt="I'Styla Senkosi reference and inspiration research" />
+            </div>
           </section>
 
           <div className="button-container">

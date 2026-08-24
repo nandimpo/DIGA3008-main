@@ -22,7 +22,7 @@ export default function LipSync() {
             <div className="project-detail-story">
               <h2>Long story short</h2>
               <p>
-                Lip sync is one of the harder animation skills to get feeling natural — the mouth shapes have
+                Lip sync is one of the harder animation skills to get feeling natural, the mouth shapes have
                 to land on the beat without the performance feeling mechanical. This piece was a chance to
                 practice exactly that: staging the character clearly, and syncing mouth shapes tightly to the
                 timing of the line.
@@ -40,10 +40,19 @@ export default function LipSync() {
             </div>
           </div>
 
-          <p className="project-detail-note">
-            More process shots coming soon — the audio reference, mouth-shape breakdowns, or an animatic would
-            make a great addition here.
-          </p>
+          <div className="project-detail-process">
+            <h2 className="project-detail-process-heading">From My Design Journal</h2>
+            <p className="project-detail-process-note">
+              The mouth-shape library I studied before animating, matching visemes to sound before worrying
+              about performance.
+            </p>
+            <div className="process-scroll">
+              <figure className="process-page">
+                <img src="/Images/Portfolio/Animation/lip sync/lips.jpg" alt="Mouth shape reference chart for lip sync" />
+                <figcaption>Reference: mouth shape library for lip sync</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
       </main>
 

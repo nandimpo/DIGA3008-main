@@ -25,7 +25,7 @@ export default function PortfolioHome() {
             </h1>
             <p id="subTitle">Animation | Design | Essays</p>
             <p className="portfolio-intro">
-              I am Nandi Mpofu and I am from Johannesburg. I am an animator, designer, and writer. I am currently proficient in English and French writing. The software I'm most comfortable with includes Unity, Blender, and the Photoshop suite. I'm particularly interested in design—specifically editorial design and production design.
+              I am Nandi Mpofu and I am from Johannesburg. I am an animator, designer, and writer. I am currently proficient in English and French writing. The software I'm most comfortable with includes Unity, Blender, and the Photoshop suite. I'm particularly interested in design, specifically editorial design and production design.
             </p>
 
             <div className="portfolio-buttons">
@@ -66,7 +66,7 @@ export default function PortfolioHome() {
           <div className="project-row-list">
             <Link className="project-row" to="/portfolio/animation/homer-evolution">
               <span className="project-row-body">
-                <span className="project-row-title">Homer Simpson — An Animation Evolution</span>
+                <span className="project-row-title">Homer Simpson, An Animation Evolution</span>
                 <span className="project-row-hook">Three studies tracing one character from a blinking loop to a full walk cycle to weighted object interaction.</span>
               </span>
               <span className="project-row-arrow" aria-hidden="true">→</span>

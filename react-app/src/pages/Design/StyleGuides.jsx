@@ -32,7 +32,7 @@ export default function StyleGuides() {
             <h3>Final Style Guide</h3>
             <img src="/Images/Blogs/style guide (correct).png" alt="Final style guide with balanced colors" />
             <p className="p-summary">
-              I added white to create more breathing space and let the other colours shine. The green was added to complement the orange—bringing calmness to the warmth. 
+              I added white to create more breathing space and let the other colours shine. The green was added to complement the orange, bringing calmness to the warmth. 
               This version feels way more balanced and human. It has energy without being overwhelming, and it feels grounded. I can see myself using this across all my pages with confidence. 
               The biggest shift was realizing that my colour choices could reflect *me*, not just aesthetic trends.
             </p>

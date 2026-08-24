@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import '../../styles/Blogs.css';
-import useGradientBackground from '../../hooks/useGradientBackground';
+import usePaperBackground from '../../hooks/usePaperBackground';
 
 export default function Blog1() {
-  useGradientBackground();
+  usePaperBackground();
 
   return (
     <>
       <div className="blog-article-wrapper">
-          <h1>Blog Post 1 – My experience setting up GitHub and publishing to Pages.</h1>
+          <h1>Blog Post 1: My experience setting up GitHub and publishing to Pages.</h1>
           <p className="blog-date">17 February 2025</p>
           <hr />
 
