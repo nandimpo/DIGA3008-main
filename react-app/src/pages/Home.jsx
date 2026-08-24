@@ -63,20 +63,22 @@ export default function Home() {
         <div className="about-container">
           <div className="about-text">
             <h2>This is<br /><span>My Story</span></h2>
-            <p className="story-beat">
-              I am a <strong>people to people designer</strong>. A logical creative, I use art, technology &amp; storytelling to try and make the world a better place. I just love to design.
-            </p>
-            <p className="story-beat">
-              I fell in love with design through storytelling, across illustration, animation, and interaction.
-            </p>
-            <p className="story-beat">
-              Working between Johannesburg and online creative spaces, I document stories through visuals, thoughtful interfaces, and words.
-              I'm passionate about creating work that values empathy, accessibility, and community.
-            </p>
-            <p className="story-beat">
-              Whether coding interfaces, designing animations, or writing essays, I aim to bridge art and tech with purpose, and I'm increasingly drawn toward <strong>immersive experience design</strong>, building the kind of interactive,
-              story-driven work you're scrolling through right now.
-            </p>
+            <div className="story-note">
+              <p className="story-beat">
+                I am a <strong>people to people designer</strong>. A logical creative, I use art, technology &amp; storytelling to try and make the world a better place. I just love to design.
+              </p>
+              <p className="story-beat">
+                I fell in love with design through storytelling, across illustration, animation, and interaction.
+              </p>
+              <p className="story-beat">
+                Working between Johannesburg and online creative spaces, I document stories through visuals, thoughtful interfaces, and words.
+                I'm passionate about creating work that values empathy, accessibility, and community.
+              </p>
+              <p className="story-beat">
+                Whether coding interfaces, designing animations, or writing essays, I aim to bridge art and tech with purpose, and I'm increasingly drawn toward <strong>immersive experience design</strong>, building the kind of interactive,
+                story-driven work you're scrolling through right now.
+              </p>
+            </div>
           </div>
           <div className="about-image">
             <img src="/Images/Miscallanous/About me.gif" alt="These are series of photos that I took for my 'About Me' page" />

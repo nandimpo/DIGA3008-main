@@ -174,7 +174,11 @@ nav ul li a:hover {
 }
 
 .style-guide-img {
-  max-width: 28rem;
+  max-width: 20rem;
+  max-height: 30rem;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   display: block;
 }
 

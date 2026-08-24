@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap');
+
 @font-face {
   font-family: 'heading font';
   src: url('../Fonts/Grown.ttf.ttf') format('truetype');
@@ -276,26 +278,24 @@ h6:not(svg text) {
   font-weight: 600;
   font-size: 0.9rem;
   color: #2a2318;
-  background: #F7F2E4;
+  background-color: #EBE0C8;
+  background-image: url('Images/Portfolio/Skills-crop.png');
+  background-size: cover;
+  background-position: center;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 0.375rem;
   padding: 0.75rem 1.1rem;
   text-align: center;
   box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.28);
-  clip-path: polygon(
-    2% 15%, 8% 4%, 20% 8%, 30% 2%, 45% 6%, 60% 1%, 75% 5%, 90% 2%, 98% 10%,
-    100% 30%, 96% 50%, 100% 70%, 97% 88%, 90% 96%, 75% 100%, 60% 95%, 45% 100%,
-    30% 97%, 15% 100%, 4% 92%, 8% 75%, 1% 55%, 5% 35%
-  );
   transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0s;
 }
 
-.skill-grid .skill-tag:nth-child(6n+1) { transform: rotate(-2.2deg); background: #F7F2E4; }
-.skill-grid .skill-tag:nth-child(6n+2) { transform: rotate(1.8deg); background: #EFE6D0; }
-.skill-grid .skill-tag:nth-child(6n+3) { transform: rotate(-1deg); background: #F9F1DC; }
-.skill-grid .skill-tag:nth-child(6n+4) { transform: rotate(2.4deg); background: #F2E9D6; }
-.skill-grid .skill-tag:nth-child(6n+5) { transform: rotate(-1.6deg); background: #F7F2E4; }
-.skill-grid .skill-tag:nth-child(6n) { transform: rotate(1.2deg); background: #EFE6D0; }
+.skill-grid .skill-tag:nth-child(6n+1) { transform: rotate(-2.2deg); }
+.skill-grid .skill-tag:nth-child(6n+2) { transform: rotate(1.8deg); }
+.skill-grid .skill-tag:nth-child(6n+3) { transform: rotate(-1deg); }
+.skill-grid .skill-tag:nth-child(6n+4) { transform: rotate(2.4deg); }
+.skill-grid .skill-tag:nth-child(6n+5) { transform: rotate(-1.6deg); }
+.skill-grid .skill-tag:nth-child(6n) { transform: rotate(1.2deg); }
 
 .skill-tag:hover {
   transform: rotate(0deg) scale(1.06);
@@ -825,14 +825,27 @@ nav {
   position: sticky;
   top: 0;
   z-index: 101;
-  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
+  border-bottom: 0.125rem dashed rgba(95, 81, 67, 0.25);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
 }
 
 nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-family: 'Caveat', var(--heading-font), cursive;
+  font-size: 2.25rem;
+  font-weight: 700;
   color: var(--main-bg);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+nav .logo::after {
+  content: '✦';
+  display: inline-block;
+  margin-left: 0.3rem;
+  font-family: initial;
+  font-size: 0.8rem;
+  vertical-align: super;
+  color: var(--accent-color, #E1B808);
 }
 
 nav ul {
@@ -858,25 +871,27 @@ nav ul li a {
 nav ul li a:not(.linkedin-icon)::after {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: -0.125rem;
-  width: 0;
-  height: 0.1875rem;
-  border-radius: 0.125rem;
-  background-color: var(--button-color);
-  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  left: -0.25rem;
+  right: -0.25rem;
+  bottom: -0.05rem;
+  height: 0.55rem;
+  border-radius: 0.15rem;
+  background-color: rgba(225, 184, 8, 0.55);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: -1;
 }
 
 nav ul li a:hover:not(.linkedin-icon)::after,
 nav ul li a.active:not(.linkedin-icon)::after {
-  width: 100%;
+  transform: scaleX(1);
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: var(--button-color);
+  color: #2a2318;
   font-weight: bold;
-  transform: translateY(-0.125rem);
 }
 
 #check {
