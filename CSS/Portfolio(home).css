@@ -1,8 +1,57 @@
+.portfolio-scroll-page {
+  --portfolio-scroll-color: rgb(95, 81, 67);
+  --portfolio-warmth: 0;
+  --portfolio-parallax-y: 0px;
+  background-color: var(--portfolio-scroll-color);
+  transition: background-color 120ms linear;
+}
+
+.portfolio-scroll-wash {
+  position: fixed;
+  inset: -12vh -8vw;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at 50% calc(28% + var(--portfolio-parallax-y)),
+      rgba(241, 196, 83, 0.55) 0,
+      rgba(225, 184, 8, 0.42) 32%,
+      rgba(180, 148, 40, 0.32) 68%,
+      rgba(116, 96, 40, 0.18) 100%
+    );
+  opacity: 0;
+  transform: scale(1.08);
+  will-change: opacity, transform;
+}
+
+.portfolio-scroll-page > :not(nav):not(.lightbox-overlay) {
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio-scroll-page > .portfolio-scroll-wash {
+  position: fixed;
+  z-index: 0;
+}
+
 .portfolio-container {
   padding: 4rem 1.5rem;
-  background-color: var(--main-bg);
+  background-color: transparent;
   color: var(--text-color);
   flex: 1;
+}
+
+.portfolio-scroll-page .project-row-section {
+  background-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-scroll-page {
+    --portfolio-scroll-color: rgb(148, 94, 34);
+    --portfolio-warmth: 0.45;
+    --portfolio-parallax-y: 0px;
+    transition: none;
+  }
 }
 
 .portfolio-header {

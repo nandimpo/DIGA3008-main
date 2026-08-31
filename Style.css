@@ -430,9 +430,42 @@
 }
 
 .about-section {
-  background-color: #EBE4D2;
+  position: relative;
+  background-color: transparent;
   color: #5F5143;
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 16rem;
+}
+
+.home-ombre-wash {
+  position: fixed;
+  inset: -40vh -10vw;
+  z-index: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    #EBE4D2 0%,
+    #EBE4D2 30%,
+    #dcd1b9 45%,
+    #c2b195 58%,
+    #9c8a71 70%,
+    #796a59 84%,
+    #5F5143 100%
+  );
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  will-change: opacity, transform;
+  transition: opacity 0.15s linear;
+}
+
+.home-scroll-page > :not(.home-ombre-wash):not(nav):not(.lightbox-overlay) {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-ombre-wash {
+    transition: none;
+  }
 }
 
 .about-container {
